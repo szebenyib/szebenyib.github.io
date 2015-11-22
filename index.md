@@ -72,7 +72,7 @@ Univariate tab: it displays a simple historgram in case of numerical variables a
 
 Multivariate tab: it displays a pairs plot, known as scatterplot for all the variables. Use this to observe the connection between variables.
 
-Both tabs change their content based on input conrols!
+Both tabs change their content based on input controls!
 
 ---
 
@@ -93,10 +93,14 @@ print(q)
 
 ## The model
 
+The model is generated dynamically too. You may select the explanatory variables and you may observe how the model's characteristics change as you add and remove variables.
+
+By having the different data, uni-, multivariate and model tabs all available the same time you may experience what the effect of certain variables are and what it may be traced back to.
+
 ---
 
 ## So...
 
-1. The link:
+1. The link: [https://szebenyib.shinyapps.io/quick_regression_shiny]
 2. Any questions?
 3. Discover it for yourself! :)
