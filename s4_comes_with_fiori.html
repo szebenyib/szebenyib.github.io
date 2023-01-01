@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>S/4 comes with Fiori, is your organization ready?</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+      <link rel="alternate" hreflang="hu" href="/s4_comes_with_fiori-hu.html">
+
+        <meta name="description" content="Fiori is *the* way how S/4 should be used. The new technology will open opportunities not seen before" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">szebenyib</a></h1>
+                <nav><ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li class="active"><a href="/category/fiori.html">Fiori</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/s4_comes_with_fiori.html" rel="bookmark"
+           title="Permalink to S/4 comes with Fiori, is your organization ready?">S/4 comes with Fiori, is your organization ready?</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-01-20T00:00:00+01:00">
+                Published: 2022-01-20
+        </abbr>
+		<br />
+        <abbr class="modified" title="2022-12-27T00:00:00+01:00">
+                Updated: 2022-12-27
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/balint-szebenyi.html">Balint Szebenyi</a>
+        </address>
+<p>In <a href="/category/fiori.html">Fiori</a>.</p>
+<p>tags: <a href="/tag/programming.html">programming</a> <a href="/tag/sap.html">sap</a> <a href="/tag/fiori.html">fiori</a> <a href="/tag/s4hana.html">s4hana</a> <a href="/tag/ui5.html">ui5</a> <a href="/tag/work.html">work</a> </p>Translations:
+        <a href="/s4_comes_with_fiori-hu.html" hreflang="hu">hu</a>
+
+</footer><!-- /.post-info -->      <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8eb4709">1. Introduction</a></li>
+<li><a href="#org9c5d5a5">2. Fiori is nothing new but it is always ready to renew</a>
+<ul>
+<li><a href="#orgcb0e5e0">2.1. Fiori is a must</a></li>
+<li><a href="#org8146821">2.2. Fiori is more than you think</a></li>
+<li><a href="#org2ed5455">2.3. Fiori is not the enemy</a></li>
+</ul>
+</li>
+<li><a href="#orgae5b26d">3. Prepare for it and use it as a leverage</a></li>
+</ul>
+</div>
+</div>
+<p>
+The article was originally published on <a href="https://onespire.net/news/s4-comes-with-fiori/">Onespire.net</a>
+</p>
+
+<div id="outline-container-org8eb4709" class="outline-2">
+<h2 id="org8eb4709"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I believe it is fair to assume that every business that runs SAP has heard about Fiori. Even if there are clients firmly sticking to the ECC world they must have met Fiori on SAP TechEd or other events but at least they may have experienced it via the SAP Support Launchpad.
+Some have started experimenting with selected Fiori applications, which cover their needs in a specific line of business. Others upgrade their ECC into an S/4 HANA system or are planning a greenfield S/4 implementation.
+</p>
+
+<p>
+No matter which phase the client is in, sooner or later Fiori is introduced into the SAP landscape. The difference is the extent to which it becomes a factor.
+</p>
+
+<p>
+What one would normally say is that this happens step-by-step as the technology conquers more and more areas but that is no longer the case. When it comes to an S/4 implementation, Fiori will be there. It is unavoidable.
+</p>
+
+<p>
+That is why we have collected our experiences below so that you may come prepared for your encounter and make the most of it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c5d5a5" class="outline-2">
+<h2 id="org9c5d5a5"><span class="section-number-2">2.</span> Fiori is nothing new but it is always ready to renew</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgcb0e5e0" class="outline-3">
+<h3 id="orgcb0e5e0"><span class="section-number-3">2.1.</span> Fiori is a must</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Concerning an S/4 implementation Fiori is a must. You cannot avoid it as applications and new features arrive via Fiori solutions, while traditional SAPGUI applications are gradually phased out.
+</p>
+
+<p>
+According to our experiences SAPGUI shall be thought of as a tool for consultants. The daily workflow of the end user would not touch the SAPGUI under normal conditions but it would be based on accessing Fiori and Fiori-like applications in the web browser.
+</p>
+
+<p>
+This means that Fiori applications, traditional ABAP reports with ALVs (in a generated form known as WebGUI or SAPGUI for HTML) and WebDynpros will be the interface between the end user and the SAP system.
+</p>
+
+<p>
+Why would then not everything fit into a browser? Because some use cases rely on technologies not compatible with web browsers. SAP PPDS is a good example for such an exception as it has an important screen that is built on a special UI solution, which cannot be displayed via SAPGUI for HTML.
+</p>
+
+<p>
+Should one want to observe the limitations of the WebGUI then please refer to the following notes:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://launchpad.support.sap.com#/notes/2283933">https://launchpad.support.sap.com#/notes/2283933</a> - WebGUI File Browser: FAQ for the new applet-free frontend service methods implementation.</li>
+<li><a href="https://launchpad.support.sap.com#/notes/2868608">https://launchpad.support.sap.com#/notes/2868608</a> - 7.21: SAP GUI for HTML functionality / Limitations / Sp. Behaviour</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8146821" class="outline-3">
+<h3 id="org8146821"><span class="section-number-3">2.2.</span> Fiori is more than you think</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+According to the traditional definition Fiori is the UI that relies on the UI5 toolkit and adheres to the principles and guidelines that SAP has laid down.
+</p>
+
+<p>
+Whereas that may be one good interpretation it should be noted that no frontend stands on its own, it is coupled to a backend.
+</p>
+
+<p>
+So instead of just considering the UI let's look at the whole technology stack in an on premise implementation scenario. This is what you as a client will have to support on a daily basis to keep your operations going.
+</p>
+
+<p>
+The initial distinction that is to be made is that not everything that the end user sees as Fiori is actually Fiori. As noted above it may be an analytic query powered by Embedded Analytics, a WebDynpro application as an ambassador of ancient times, a legacy ALV report or an actual UI5/Fiori app.
+</p>
+
+<p>
+Going one step further and focusing just on the UI5 toolkit one can categorize the applications into freestyle and Fiori element applications. The former group uses javascript, xml and other dependent web technologies during development to come to the desired solution regarding UI and ABAP regarding backend. This allows catering for unique needs and designs.
+</p>
+
+<p>
+However the Pareto principle is effective here as well, 80 percent of the solutions follow the same analogy so why develop the same layout over and over again for a similar task? That is where Fiori Elements comes into the play as it allows to use metadata annotations to generate the layout in the backend instead of imperatively implementing it in the frontend in different html, css and javascript files.
+</p>
+
+<p>
+This latter technology is most likely built on CDS views with ABAP mixed in at some point (with a few javascript exit possibilities on the UI side).
+</p>
+
+<p>
+To go even further the backend part may follow implementations of the ABAP Programming Model for SAP Fiori or embrace even newer ways of ABAP Restful Programming Model that relies on a concept analogous to Business Objects Processing Framework (BOPF).
+</p>
+
+<p>
+As a result, the traditional approach of having one-developer-to-rule-them-all is void. Fiori requires a different mind- and toolset than what is present in the ABAP world today. SAP has started evolving technologies at a previously unprecedented rate, it is not just the number of supported business processes, which grow release by release but the available technical ways as well. Therefore some developers will embrace UI technologies, some will specialize in the backend stack and a few will have a good overall understanding of both. Not every technology is for everyone. This will lead to a
+change in:
+</p>
+<ul class="org-ul">
+<li>what kind of expertise is needed</li>
+<li>and how many people will be able to cover the technology stack to provide the needed support for the backbone IT solution of your business.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2ed5455" class="outline-3">
+<h3 id="org2ed5455"><span class="section-number-3">2.3.</span> Fiori is not the enemy</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Based on the picture depicted above one may believe that S/4 is unnecessarily complicated from a technology perspective. Yes, it is more complex due to evolutionary reasons than an ECC but it can be tamed. Technology can be learned. We have already trained clients in Fiori and I have no doubt that they will be capable of tackling Fiori related issues and developments as well.
+</p>
+
+<p>
+If that process is started in time then I see no reason why this would be less manageable than any other non-SAP custom solution which is realised by a symbiosis of different technologies.
+</p>
+
+<p>
+What is more, learning Fiori can be started even in a non S/4 environment with selected applications or a single custom development or even with a cloud based instance, which does not require significant upfront costs.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgae5b26d" class="outline-2">
+<h2 id="orgae5b26d"><span class="section-number-2">3.</span> Prepare for it and use it as a leverage</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Why all the hassle? Because Fiori brings capabilities with it that no one could have dreamt of in an ECC world without third party solutions. Do you want to use your phone to approve a purchase order? Do you want to have reports available on your iPad? Do you want to have an overview of how well your suppliers perform this month, all aspects on a single page in an easy to consume graphical format? No problem, S/4 comes with batteries included. And if you want more, the door is open for further custom development be it just a report or a whole app that focuses on your unique process.
+</p>
+
+<p>
+What you may do as a preparation:
+</p>
+<ul class="org-ul">
+<li>discover the Fiori Launchpad and its capabilities, including authorization aspects</li>
+<li>ensure that new backend technology knowledge is available: new ABAP syntax, learn and understand object oriented programming, CDS, ABAP Restful Programming Model known as RAP, or in case of cloud check the Cloud Application Programming Model known as CAP as well, Eclipse with ABAP Development Tools</li>
+<li>ensure that new frontend technology knowledge is available: Fiori Design Guidelines, UI5 toolkit, UI5 tooling</li>
+<li>learn how the development process differs from an ABAP development (design thinking, wireframes)</li>
+<li>use the freely available openSAP courses</li>
+<li>get to know the SAP Fiori Apps Reference Library</li>
+<li>implement an application that is available for your existing landscape, refer to the Fiori Apps Library</li>
+<li>develop a Fiori application to get a real insight into the possibilities and start mastering the nuts and bolts of the process</li>
+</ul>
+
+<p>
+Note that most of the above has something to show not just for developers but consultants as well.
+</p>
+
+<p>
+They also have to learn how a Fiori app specification can and should be provided and what they may expect from the technology. The above journey may take some time so it is best to start embarking right now even if your organization does not intend to use S/4 in the next year.
+</p>
+
+<p>
+With great power comes great responsibility – this is true in the case of Fiori. Compared to what is available in an ECC system both in speed, line of business solutions and user experience one cannot mention the old and the new world on the same page. But in order to leverage the possibilities it is best to prepare ourselves for the transition and have a concept ready to flatten the waves and ensure smooth sailing so that we may enjoy the sunshine.
+</p>
+</div>
+</div>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.linkedin.com/in/balint-szebenyi/">LinkedIn</a></li>
+                            <li><a href="https://github.com/szebenyib">Github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
