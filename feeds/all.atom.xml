@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>szebenyib</title><link href="urlprefix/" rel="alternate"></link><link href="urlprefix/feeds/all.atom.xml" rel="self"></link><id>urlprefix/</id><updated>2022-12-25T00:00:00+01:00</updated><entry><title>Fiori 3 - Spaces and Pages on the Horizon</title><link href="urlprefix/fiori3.html" rel="alternate"></link><published>2022-10-26T00:00:00+02:00</published><updated>2022-12-25T00:00:00+01:00</updated><author><name>Balint Szebenyi</name></author><id>tag:None,2022-10-26:urlprefix/fiori3.html</id><summary type="html">Fiori 3 Spaces and Pages concept review</summary><content type="html">&lt;div id="table-of-contents" role="doc-toc"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>szebenyib</title><link href="https://szebenyib.github.io/" rel="alternate"></link><link href="https://szebenyib.github.io/feeds/all.atom.xml" rel="self"></link><id>https://szebenyib.github.io/</id><updated>2022-12-27T00:00:00+01:00</updated><entry><title>Fiori 3 - Spaces and Pages on the Horizon</title><link href="https://szebenyib.github.io/fiori3_spaces_and_pages.html" rel="alternate"></link><published>2022-10-26T00:00:00+02:00</published><updated>2022-12-25T00:00:00+01:00</updated><author><name>Balint Szebenyi</name></author><id>tag:szebenyib.github.io,2022-10-26:/fiori3_spaces_and_pages.html</id><summary type="html">Fiori 3 Spaces and Pages concept review</summary><content type="html">&lt;div id="table-of-contents" role="doc-toc"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents" role="doc-toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#org8b09275"&gt;1. Fiori 1-2-3 - what is it?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#orge821707"&gt;2. Fiori 3 - what does it bring to the table today?&lt;/a&gt;
+&lt;li&gt;&lt;a href="#orgb347db2"&gt;1. Fiori 1-2-3 - what is it?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org7cd0296"&gt;2. Fiori 3 - what does it bring to the table today?&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#orgb59c4d4"&gt;2.1. Spaces and pages&lt;/a&gt;
+&lt;li&gt;&lt;a href="#org24fd782"&gt;2.1. Spaces and pages&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#org77fdbad"&gt;2.1.1. Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#orgbad2078"&gt;2.1.2. Who is affected?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#org16d5970"&gt;2.1.3. Implications&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#org539cdb1"&gt;2.1.4. Transition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org4706be3"&gt;2.1.1. Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#orgb787c56"&gt;2.1.2. Who is affected?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org52041bd"&gt;2.1.3. Implications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org9986640"&gt;2.1.4. Transition&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="#org861d08b"&gt;2.2. Horizon theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#orgd2c9527"&gt;2.2. Horizon theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="#org991f38f"&gt;3. Summary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org48085ad"&gt;3. Summary&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;p&gt;
+The article was originally published on &lt;a href="https://onespire.net/news/fiori-3-spaces-and-pages/"&gt;Onespire.net&lt;/a&gt;
+&lt;/p&gt;
 
-&lt;div id="outline-container-org8b09275" class="outline-2"&gt;
-&lt;h2 id="org8b09275"&gt;&lt;span class="section-number-2"&gt;1.&lt;/span&gt; Fiori 1-2-3 - what is it?&lt;/h2&gt;
+&lt;div id="outline-container-orgb347db2" class="outline-2"&gt;
+&lt;h2 id="orgb347db2"&gt;&lt;span class="section-number-2"&gt;1.&lt;/span&gt; Fiori 1-2-3 - what is it?&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 SAP Fiori as a term has appeared around 2013. This is the time when the first Fiori apps have appeared. 25 to be precise. A long road has been taken since, with more and more customers embarking on their S/4 HANA and SAP BTP (Business Technology Platform) journey where this technology powers everyday operations relying on thousands of Fiori apps.
@@ -43,8 +46,8 @@ Although Fiori 3 was announced in 2018 it takes time to adapt it. And by the tim
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orge821707" class="outline-2"&gt;
-&lt;h2 id="orge821707"&gt;&lt;span class="section-number-2"&gt;2.&lt;/span&gt; Fiori 3 - what does it bring to the table today?&lt;/h2&gt;
+&lt;div id="outline-container-org7cd0296" class="outline-2"&gt;
+&lt;h2 id="org7cd0296"&gt;&lt;span class="section-number-2"&gt;2.&lt;/span&gt; Fiori 3 - what does it bring to the table today?&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 I believe that the first and most important aspect is unification. If you use SAP BTP you can see that products are getting more and more aligned regarding design and way of operation. Before this guideline was published SAP products had their own designs - they were similar, but they all worked at least a bit a differently. But with User Experience (UX) in focus SAP has to offer the same look and behaviour to its users so as to suggest that they use software belonging to each other. One company - one face - one design.
@@ -55,12 +58,12 @@ Besides unification there is a better integration of machine learning, and the a
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgb59c4d4" class="outline-3"&gt;
-&lt;h3 id="orgb59c4d4"&gt;&lt;span class="section-number-3"&gt;2.1.&lt;/span&gt; Spaces and pages&lt;/h3&gt;
+&lt;div id="outline-container-org24fd782" class="outline-3"&gt;
+&lt;h3 id="org24fd782"&gt;&lt;span class="section-number-3"&gt;2.1.&lt;/span&gt; Spaces and pages&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-2-1"&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org77fdbad" class="outline-4"&gt;
-&lt;h4 id="org77fdbad"&gt;&lt;span class="section-number-4"&gt;2.1.1.&lt;/span&gt; Introduction&lt;/h4&gt;
+&lt;div id="outline-container-org4706be3" class="outline-4"&gt;
+&lt;h4 id="org4706be3"&gt;&lt;span class="section-number-4"&gt;2.1.1.&lt;/span&gt; Introduction&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-1"&gt;
 &lt;p&gt;
 Spaces and pages is the latest and greatest way how a Fiori Launchpad is to be organised.
@@ -76,8 +79,8 @@ Spaces and pages offers you a three-tier organisation of your tiles. In contrast
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgbad2078" class="outline-4"&gt;
-&lt;h4 id="orgbad2078"&gt;&lt;span class="section-number-4"&gt;2.1.2.&lt;/span&gt; Who is affected?&lt;/h4&gt;
+&lt;div id="outline-container-orgb787c56" class="outline-4"&gt;
+&lt;h4 id="orgb787c56"&gt;&lt;span class="section-number-4"&gt;2.1.2.&lt;/span&gt; Who is affected?&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-2"&gt;
 &lt;p&gt;
 Spaces and pages became available with S/4HANA 2020 and since release 2021 it is &lt;b&gt;the&lt;/b&gt; way how Fiori Launchpad is ought to be used. Groups are officially deprecated as of S/4HANA 2021. As such anyone using S/4HANA or planning its transition to S/4HANA will need to proceed into this direction.
@@ -85,8 +88,8 @@ Spaces and pages became available with S/4HANA 2020 and since release 2021 it is
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org16d5970" class="outline-4"&gt;
-&lt;h4 id="org16d5970"&gt;&lt;span class="section-number-4"&gt;2.1.3.&lt;/span&gt; Implications&lt;/h4&gt;
+&lt;div id="outline-container-org52041bd" class="outline-4"&gt;
+&lt;h4 id="org52041bd"&gt;&lt;span class="section-number-4"&gt;2.1.3.&lt;/span&gt; Implications&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-3"&gt;
 &lt;p&gt;
 Transitioning from groups to spaces and pages requires effort from the side of the organisation. But luckily there are tools to help and there is a possibility to make the rollout of this concept phased.
@@ -114,8 +117,8 @@ And how to 'install' spaces and pages? It comes with S/4HANA, it is already ther
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org539cdb1" class="outline-4"&gt;
-&lt;h4 id="org539cdb1"&gt;&lt;span class="section-number-4"&gt;2.1.4.&lt;/span&gt; Transition&lt;/h4&gt;
+&lt;div id="outline-container-org9986640" class="outline-4"&gt;
+&lt;h4 id="org9986640"&gt;&lt;span class="section-number-4"&gt;2.1.4.&lt;/span&gt; Transition&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-4"&gt;
 &lt;p&gt;
 The big picture has been outlined above, but what about the standard roles? What about existing groups? What about starting from scratch? What about existing roles?
@@ -128,7 +131,7 @@ Let's go and tackle those one-by-one.
 &lt;/div&gt;
 
 &lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;a id="org0e00072"&gt;&lt;/a&gt;Standard roles&lt;br /&gt;
+&lt;li&gt;&lt;a id="orga647a06"&gt;&lt;/a&gt;Standard roles&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-1"&gt;
 &lt;p&gt;
 Standard roles come with a preconfigured spaces and pages. They can form the backbone of both an initial setup and a migration. If your organisation mostly relies on standard roles then copying those again and slightly modifying them to your needs will consume the least amount of time.
@@ -136,7 +139,7 @@ Standard roles come with a preconfigured spaces and pages. They can form the bac
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="org54c602b"&gt;&lt;/a&gt;Existing groups&lt;br /&gt;
+&lt;li&gt;&lt;a id="orgcdbddff"&gt;&lt;/a&gt;Existing groups&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-2"&gt;
 &lt;p&gt;
 If your roles greatly deviate from the standard business roles then you may be best off migrating your groups into the new world. There is a tool for that and it allows you to create pages from existing groups. This can help make the transition faster but beware that once a page has been created there is no way to use this tool to add further contents of existing groups.
@@ -144,7 +147,7 @@ If your roles greatly deviate from the standard business roles then you may be b
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="org158261e"&gt;&lt;/a&gt;Starting from scratch&lt;br /&gt;
+&lt;li&gt;&lt;a id="org527b9a7"&gt;&lt;/a&gt;Starting from scratch&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-3"&gt;
 &lt;p&gt;
 As a general rule of thumb one should always put the end user and their daily activities first. Think about how they use the system, consult with them to make the most out of the implementation - and Fiori in general. If you missed the opportunity during an earlier implementation this is the time to make your system and users more efficient.
@@ -152,7 +155,7 @@ As a general rule of thumb one should always put the end user and their daily ac
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="orgea0516d"&gt;&lt;/a&gt;Existing roles&lt;br /&gt;
+&lt;li&gt;&lt;a id="orgc5d123d"&gt;&lt;/a&gt;Existing roles&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-4"&gt;
 &lt;p&gt;
 One should not be afraid of adding spaces to an existing role. They are different authorisation objects than groups, this is also the reason why groups and the spaces and pages concept can coexist. If the option is taken away from end users to go back to groups they will not be able to use it - they can safely remain in roles alongside with spaces.
@@ -163,8 +166,8 @@ One should not be afraid of adding spaces to an existing role. They are differen
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org861d08b" class="outline-3"&gt;
-&lt;h3 id="org861d08b"&gt;&lt;span class="section-number-3"&gt;2.2.&lt;/span&gt; Horizon theme&lt;/h3&gt;
+&lt;div id="outline-container-orgd2c9527" class="outline-3"&gt;
+&lt;h3 id="orgd2c9527"&gt;&lt;span class="section-number-3"&gt;2.2.&lt;/span&gt; Horizon theme&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-2-2"&gt;
 &lt;p&gt;
 It is not just the world of Fiori that keeps evolving and getting fine-grained to meet customer expectations based on UX research of SAP but the toolkit behind it as well. Actually the toolkit has been around since at least three years earlier then the first Fiori apps.
@@ -189,39 +192,42 @@ The good news is that if you have not modified the standard theme and do not use
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org991f38f" class="outline-2"&gt;
-&lt;h2 id="org991f38f"&gt;&lt;span class="section-number-2"&gt;3.&lt;/span&gt; Summary&lt;/h2&gt;
+&lt;div id="outline-container-org48085ad" class="outline-2"&gt;
+&lt;h2 id="org48085ad"&gt;&lt;span class="section-number-2"&gt;3.&lt;/span&gt; Summary&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-3"&gt;
 &lt;p&gt;
 SAP and its ERP system has started moving fast, a lot faster than before. But SAP is committed to keep S/4HANA stable all the while leaving room for new features to arrive. Fiori is not an exception, it gets better and better and by constantly paying attention to its evolution all organizations can leverage the latest and greatest UX SAP has to offer - with minimal effort.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="Fiori"></category><category term="programming"></category><category term="sap"></category><category term="fiori"></category><category term="work"></category></entry><entry><title>Fiori 3 - Spaces and Pages a Horizonton</title><link href="urlprefix/fiori3-hu.html" rel="alternate"></link><published>2022-10-26T00:00:00+02:00</published><updated>2022-12-25T00:00:00+01:00</updated><author><name>Balint Szebenyi</name></author><id>tag:None,2022-10-26:urlprefix/fiori3-hu.html</id><summary type="html">Fiori 3 Spaces and Pages concept review</summary><content type="html">&lt;div id="table-of-contents" role="doc-toc"&gt;
+</content><category term="Fiori"></category><category term="programming"></category><category term="sap"></category><category term="fiori"></category><category term="work"></category></entry><entry><title>Fiori 3 - Spaces and Pages a Horizonton</title><link href="https://szebenyib.github.io/fiori3_spaces_and_pages-hu.html" rel="alternate"></link><published>2022-10-26T00:00:00+02:00</published><updated>2022-12-25T00:00:00+01:00</updated><author><name>Balint Szebenyi</name></author><id>tag:szebenyib.github.io,2022-10-26:/fiori3_spaces_and_pages-hu.html</id><summary type="html">Fiori 3 Spaces and Pages concept review</summary><content type="html">&lt;div id="table-of-contents" role="doc-toc"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id="text-table-of-contents" role="doc-toc"&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#orga1c35f0"&gt;1. Fiori 1-2-3 - mi is ez valójában?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#org6f65fb5"&gt;2. Fiori 3 - mit jelent ma számunkra?&lt;/a&gt;
+&lt;li&gt;&lt;a href="#org13a56ca"&gt;1. Fiori 1-2-3 - mi is ez valójában?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org0d61688"&gt;2. Fiori 3 - mit jelent ma számunkra?&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#orga8afed0"&gt;2.1. Spaces and pages&lt;/a&gt;
+&lt;li&gt;&lt;a href="#org12c4ad3"&gt;2.1. Spaces and pages&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="#orgc59ba8d"&gt;2.1.1. Bevezetés&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#org217338a"&gt;2.1.2. Kit érint?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#org1c83402"&gt;2.1.3. Következmények&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#org8fd8ede"&gt;2.1.4. Átállás&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org2dbaa47"&gt;2.1.1. Bevezetés&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org476ae93"&gt;2.1.2. Kit érint?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org38335de"&gt;2.1.3. Következmények&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org9f8ef8c"&gt;2.1.4. Átállás&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="#orgb1c95b8"&gt;2.2. Horizon téma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org67dd6d6"&gt;2.2. Horizon téma&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="#org5ac64cd"&gt;3. Összefoglaló&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org86019ef"&gt;3. Összefoglaló&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;p&gt;
+A bejegyzés eredetileg a &lt;a href="https://onespire.hu/sap-hirek/fiori-3-spaces-and-pages/"&gt;Onespire&lt;/a&gt; oldalán jelent meg.
+&lt;/p&gt;
 
-&lt;div id="outline-container-orga1c35f0" class="outline-2"&gt;
-&lt;h2 id="orga1c35f0"&gt;&lt;span class="section-number-2"&gt;1.&lt;/span&gt; Fiori 1-2-3 - mi is ez valójában?&lt;/h2&gt;
+&lt;div id="outline-container-org13a56ca" class="outline-2"&gt;
+&lt;h2 id="org13a56ca"&gt;&lt;span class="section-number-2"&gt;1.&lt;/span&gt; Fiori 1-2-3 - mi is ez valójában?&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 A SAP Fiori fogalom 2013 környékén jelent meg. Ekkor jelentek meg az első Fiori alkalmazások. 25, hogy pontosak legyeünk. Sok idő telt el azóta és egyre több ügyfél indul el az S/4HANA és a SAP BTP (Business Technology Platform) irányába, ahol ez az a technológia, amely több ezer appon keresztül az üzleti folyamatok motorját adja.
@@ -242,8 +248,8 @@ Habár a Fiori 3-at 2018-ban jelentették be, időbe telik mire elterjed. És az
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org6f65fb5" class="outline-2"&gt;
-&lt;h2 id="org6f65fb5"&gt;&lt;span class="section-number-2"&gt;2.&lt;/span&gt; Fiori 3 - mit jelent ma számunkra?&lt;/h2&gt;
+&lt;div id="outline-container-org0d61688" class="outline-2"&gt;
+&lt;h2 id="org0d61688"&gt;&lt;span class="section-number-2"&gt;2.&lt;/span&gt; Fiori 3 - mit jelent ma számunkra?&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 A legfontosabb jellemzője a Fiori 3-nak az egységesítés. Aki használja a SAP felhőjét, annak szolgáltatásait, az látja a SAP BTP-n, hogy a termékek egyre harmonizálódnak, mind designban, mind működésben. Mielőtt ez az egységesítés kimondásra került volna a SAP részéről a Fiori 3-mal, valamennyi terméknek megvolt a saját formavilága. Hasonlóak voltak, de csak hasonlóak; mindegyik kicsit másképp működött. De mivelhogy a felhasználói élmény (UX) kiemelten fontos a SAP számára, így azonos kinézetet és működést kell nyújtania, hogy termékeiről érezzék, azok koherensek és jól működnek egymással. Egy szoftvermegoldásokat szállító vállalat - egy arc a külvilág felé - egy design.
@@ -254,12 +260,12 @@ Az egységesítés mellett természetesen egyre jobban integrálódnak gépi tan
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orga8afed0" class="outline-3"&gt;
-&lt;h3 id="orga8afed0"&gt;&lt;span class="section-number-3"&gt;2.1.&lt;/span&gt; Spaces and pages&lt;/h3&gt;
+&lt;div id="outline-container-org12c4ad3" class="outline-3"&gt;
+&lt;h3 id="org12c4ad3"&gt;&lt;span class="section-number-3"&gt;2.1.&lt;/span&gt; Spaces and pages&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-2-1"&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc59ba8d" class="outline-4"&gt;
-&lt;h4 id="orgc59ba8d"&gt;&lt;span class="section-number-4"&gt;2.1.1.&lt;/span&gt; Bevezetés&lt;/h4&gt;
+&lt;div id="outline-container-org2dbaa47" class="outline-4"&gt;
+&lt;h4 id="org2dbaa47"&gt;&lt;span class="section-number-4"&gt;2.1.1.&lt;/span&gt; Bevezetés&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-1"&gt;
 &lt;p&gt;
 A spaces and pages a legújabb és legjobb módja jelenleg a Fiori Launchpad használatának és annak tartalmának elrendezéséhez.
@@ -275,8 +281,8 @@ A spaces and pages egy három rétegű csempe szervezést tesz lehetővé. A kor
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org217338a" class="outline-4"&gt;
-&lt;h4 id="org217338a"&gt;&lt;span class="section-number-4"&gt;2.1.2.&lt;/span&gt; Kit érint?&lt;/h4&gt;
+&lt;div id="outline-container-org476ae93" class="outline-4"&gt;
+&lt;h4 id="org476ae93"&gt;&lt;span class="section-number-4"&gt;2.1.2.&lt;/span&gt; Kit érint?&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-2"&gt;
 &lt;p&gt;
 A spaces and pages megközelítés az S/4HANA 2020-szal jelent meg on premise felállásnál és a 2021-es kiadás óta ez &lt;b&gt;a&lt;/b&gt; mód, ahogy a Fiori Launchpad használandó. A csoportok S/4HANA 2021-en hivatalosan is elavultnak vannak deklarálva. Így tehát bárki, aki S/4HANA-t használ, vagy tervezi a váltást ECC-ről, az ebbe az irányba kell haladjon.
@@ -284,8 +290,8 @@ A spaces and pages megközelítés az S/4HANA 2020-szal jelent meg on premise fe
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1c83402" class="outline-4"&gt;
-&lt;h4 id="org1c83402"&gt;&lt;span class="section-number-4"&gt;2.1.3.&lt;/span&gt; Következmények&lt;/h4&gt;
+&lt;div id="outline-container-org38335de" class="outline-4"&gt;
+&lt;h4 id="org38335de"&gt;&lt;span class="section-number-4"&gt;2.1.3.&lt;/span&gt; Következmények&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-3"&gt;
 &lt;p&gt;
 Az átmenet a két világból energiát igényel a szervezettől. De szerencsére vannak rá eszközök és lehetőség, hogy mindez fázisolva, több lépcsőben is történhessen.
@@ -313,8 +319,8 @@ Az opt-in megközelítés azt is lehetővé teszi, hogy a rendszeradminisztráto
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org8fd8ede" class="outline-4"&gt;
-&lt;h4 id="org8fd8ede"&gt;&lt;span class="section-number-4"&gt;2.1.4.&lt;/span&gt; Átállás&lt;/h4&gt;
+&lt;div id="outline-container-org9f8ef8c" class="outline-4"&gt;
+&lt;h4 id="org9f8ef8c"&gt;&lt;span class="section-number-4"&gt;2.1.4.&lt;/span&gt; Átállás&lt;/h4&gt;
 &lt;div class="outline-text-4" id="text-2-1-4"&gt;
 &lt;p&gt;
 Az átállás nagy vonalakban fent ismertetésre került, de mi a helyzet a sztenderd szerepekkel? Mi a helyzet a már létező csoportokkal? Kezdjük a nulláról? Mi legyen a meglévő szerepekkel?
@@ -326,7 +332,7 @@ Vegyük őket sorra!
 &lt;/div&gt;
 
 &lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;a id="org9d32e1d"&gt;&lt;/a&gt;Sztenderd szerepek&lt;br /&gt;
+&lt;li&gt;&lt;a id="org6d01805"&gt;&lt;/a&gt;Sztenderd szerepek&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-1"&gt;
 &lt;p&gt;
 A sztenderd szerepekben ott vannak az előrekonfigurált spacek és pagek. Ezek alkothatják egy nulláról induló rendszer szerepeinek gerincét, de akár egy migrációét is. Ha az Ön szervezete sztenderd közeli szerepeket használ, akkor azok újramásolása és adaptációja fog a legkevesebb időbe kerülni.
@@ -334,7 +340,7 @@ A sztenderd szerepekben ott vannak az előrekonfigurált spacek és pagek. Ezek 
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="orgca3adc6"&gt;&lt;/a&gt;Létező csoportok&lt;br /&gt;
+&lt;li&gt;&lt;a id="org955d3c8"&gt;&lt;/a&gt;Létező csoportok&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-2"&gt;
 &lt;p&gt;
 Ha az Ön szerepei nagyon eltérnek a sztenderdtől, akkor valószíűleg azzal jár a legjobban, hoogyha azokat migrálja az új világba. Van erre egy eszköz, amely oldalakat tud létrehozni a már létező csoportokból. Ezzel gyorsabb lehet az átállás, csak arra kell figyelni hogy az eszköz az új oldalak létrehozását támogatja - a meglévőek módosítását már nem.
@@ -342,7 +348,7 @@ Ha az Ön szerepei nagyon eltérnek a sztenderdtől, akkor valószíűleg azzal 
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="org724ab51"&gt;&lt;/a&gt;Indulás a nulláról&lt;br /&gt;
+&lt;li&gt;&lt;a id="org9ab1d9f"&gt;&lt;/a&gt;Indulás a nulláról&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-3"&gt;
 &lt;p&gt;
 A Fiori paradigma itt is megjelenik: a végfelhasználó és a napi munkavégzése legyen a középpontban. Át kell gondolni, hogyan használják a rendszert, megismerni a felhasználási szokásokat és ez alapján kialakítani a feületet - így lehet a legtöbbet kihozni mind a rendszerből, mind a Fiori felületből. Ha egy korábbi implementáció során erre már nem volt idő, akkor ez egy jó alkalom lehet arra, hogy növeljük a felhasználók és így az egész szervezet hatékonyságát.
@@ -350,7 +356,7 @@ A Fiori paradigma itt is megjelenik: a végfelhasználó és a napi munkavégzé
 &lt;/div&gt;
 &lt;/li&gt;
 
-&lt;li&gt;&lt;a id="orgc300c93"&gt;&lt;/a&gt;Létező szerepek&lt;br /&gt;
+&lt;li&gt;&lt;a id="org5677bfb"&gt;&lt;/a&gt;Létező szerepek&lt;br /&gt;
 &lt;div class="outline-text-5" id="text-2-1-4-4"&gt;
 &lt;p&gt;
 Ne féljünk a meglévő szerepek módosításától e tekintetben. Nem szükséges a szerepek másolása sem. Mivel a tartományok és a csoportok más jogosultsági objektumon keresztül vezérlődnek, így nem fognak összeakadni. Ez az oka annak is, hogy a régi és az új konepció egyszerre létezhet. Pontosan emiatt nem szükséges a régi szerepekből kivenni a csoportokat, mert ha globálisan letiltásra kerül a hozzáférés, akkor senki számára nem lesznek elérhetőek, még ha a szerepekben meg is találhatóak.
@@ -361,8 +367,8 @@ Ne féljünk a meglévő szerepek módosításától e tekintetben. Nem szüksé
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgb1c95b8" class="outline-3"&gt;
-&lt;h3 id="orgb1c95b8"&gt;&lt;span class="section-number-3"&gt;2.2.&lt;/span&gt; Horizon téma&lt;/h3&gt;
+&lt;div id="outline-container-org67dd6d6" class="outline-3"&gt;
+&lt;h3 id="org67dd6d6"&gt;&lt;span class="section-number-3"&gt;2.2.&lt;/span&gt; Horizon téma&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-2-2"&gt;
 &lt;p&gt;
 Nem csak a Fiori világ az, ami fejlődik, és finomhangolódik a felhasználói igényekhez a különböző UX kutatások alapján, hanem a mögöttes eszközkészlet is. Valójában az eszközkészlet már vagy három évvel az első Fiori alkalmazások előtt már létezett.
@@ -387,12 +393,362 @@ A jó hír az, hogy ha nem történt módosítás a sztenderd témában, és nin
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org5ac64cd" class="outline-2"&gt;
-&lt;h2 id="org5ac64cd"&gt;&lt;span class="section-number-2"&gt;3.&lt;/span&gt; Összefoglaló&lt;/h2&gt;
+&lt;div id="outline-container-org86019ef" class="outline-2"&gt;
+&lt;h2 id="org86019ef"&gt;&lt;span class="section-number-2"&gt;3.&lt;/span&gt; Összefoglaló&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-3"&gt;
 &lt;p&gt;
 Az SAP és az ERP rendszere nagyon gyorsan fejlődik, sokkal gyorsabban mint korábban. De az SAP elkötelezett az S/4HANA stabilitása iránt, mindamellett hogy új és új funkciókat adnak a rendszerhez. A rendszer részét alkotó Fiori sem kivétel, jobb és jobb lesz. Ha folyamatosan figyelemmel kísérjük, akkor mindenkinek lehetősége van arra, hogy a legjobb és legújabb felhasználói élményben legyen része, amit a SAP kínálhat - minimális ráfordítás mellett.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="Fiori"></category><category term="programozás"></category><category term="sap"></category><category term="fiori"></category><category term="munka"></category></entry></feed>
+</content><category term="Fiori"></category><category term="programozás"></category><category term="sap"></category><category term="fiori"></category><category term="munka"></category></entry><entry><title>S/4 comes with Fiori, is your organization ready?</title><link href="https://szebenyib.github.io/s4_comes_with_fiori.html" rel="alternate"></link><published>2022-01-20T00:00:00+01:00</published><updated>2022-12-27T00:00:00+01:00</updated><author><name>Balint Szebenyi</name></author><id>tag:szebenyib.github.io,2022-01-20:/s4_comes_with_fiori.html</id><summary type="html">Fiori is *the* way how S/4 should be used. The new technology will open opportunities not seen before</summary><content type="html">&lt;div id="table-of-contents" role="doc-toc"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id="text-table-of-contents" role="doc-toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#org6a94f05"&gt;1. Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#orga876f41"&gt;2. Fiori is nothing new but it is always ready to renew&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#orgf9073e0"&gt;2.1. Fiori is a must&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org530f20f"&gt;2.2. Fiori is more than you think&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org8825279"&gt;2.3. Fiori is not the enemy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org14d24d5"&gt;3. Prepare for it and use it as a leverage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+The article was originally published on &lt;a href="https://onespire.net/news/s4-comes-with-fiori/"&gt;Onespire.net&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div id="outline-container-org6a94f05" class="outline-2"&gt;
+&lt;h2 id="org6a94f05"&gt;&lt;span class="section-number-2"&gt;1.&lt;/span&gt; Introduction&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I believe it is fair to assume that every business that runs SAP has heard about Fiori. Even if there are clients firmly sticking to the ECC world they must have met Fiori on SAP TechEd or other events but at least they may have experienced it via the SAP Support Launchpad.
+Some have started experimenting with selected Fiori applications, which cover their needs in a specific line of business. Others upgrade their ECC into an S/4 HANA system or are planning a greenfield S/4 implementation.
+&lt;/p&gt;
+
+&lt;p&gt;
+No matter which phase the client is in, sooner or later Fiori is introduced into the SAP landscape. The difference is the extent to which it becomes a factor.
+&lt;/p&gt;
+
+&lt;p&gt;
+What one would normally say is that this happens step-by-step as the technology conquers more and more areas but that is no longer the case. When it comes to an S/4 implementation, Fiori will be there. It is unavoidable.
+&lt;/p&gt;
+
+&lt;p&gt;
+That is why we have collected our experiences below so that you may come prepared for your encounter and make the most of it.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orga876f41" class="outline-2"&gt;
+&lt;h2 id="orga876f41"&gt;&lt;span class="section-number-2"&gt;2.&lt;/span&gt; Fiori is nothing new but it is always ready to renew&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-orgf9073e0" class="outline-3"&gt;
+&lt;h3 id="orgf9073e0"&gt;&lt;span class="section-number-3"&gt;2.1.&lt;/span&gt; Fiori is a must&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;p&gt;
+Concerning an S/4 implementation Fiori is a must. You cannot avoid it as applications and new features arrive via Fiori solutions, while traditional SAPGUI applications are gradually phased out.
+&lt;/p&gt;
+
+&lt;p&gt;
+According to our experiences SAPGUI shall be thought of as a tool for consultants. The daily workflow of the end user would not touch the SAPGUI under normal conditions but it would be based on accessing Fiori and Fiori-like applications in the web browser.
+&lt;/p&gt;
+
+&lt;p&gt;
+This means that Fiori applications, traditional ABAP reports with ALVs (in a generated form known as WebGUI or SAPGUI for HTML) and WebDynpros will be the interface between the end user and the SAP system.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why would then not everything fit into a browser? Because some use cases rely on technologies not compatible with web browsers. SAP PPDS is a good example for such an exception as it has an important screen that is built on a special UI solution, which cannot be displayed via SAPGUI for HTML.
+&lt;/p&gt;
+
+&lt;p&gt;
+Should one want to observe the limitations of the WebGUI then please refer to the following notes:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://launchpad.support.sap.com#/notes/2283933"&gt;https://launchpad.support.sap.com#/notes/2283933&lt;/a&gt; - WebGUI File Browser: FAQ for the new applet-free frontend service methods implementation.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://launchpad.support.sap.com#/notes/2868608"&gt;https://launchpad.support.sap.com#/notes/2868608&lt;/a&gt; - 7.21: SAP GUI for HTML functionality / Limitations / Sp. Behaviour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org530f20f" class="outline-3"&gt;
+&lt;h3 id="org530f20f"&gt;&lt;span class="section-number-3"&gt;2.2.&lt;/span&gt; Fiori is more than you think&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-2"&gt;
+&lt;p&gt;
+According to the traditional definition Fiori is the UI that relies on the UI5 toolkit and adheres to the principles and guidelines that SAP has laid down.
+&lt;/p&gt;
+
+&lt;p&gt;
+Whereas that may be one good interpretation it should be noted that no frontend stands on its own, it is coupled to a backend.
+&lt;/p&gt;
+
+&lt;p&gt;
+So instead of just considering the UI let's look at the whole technology stack in an on premise implementation scenario. This is what you as a client will have to support on a daily basis to keep your operations going.
+&lt;/p&gt;
+
+&lt;p&gt;
+The initial distinction that is to be made is that not everything that the end user sees as Fiori is actually Fiori. As noted above it may be an analytic query powered by Embedded Analytics, a WebDynpro application as an ambassador of ancient times, a legacy ALV report or an actual UI5/Fiori app.
+&lt;/p&gt;
+
+&lt;p&gt;
+Going one step further and focusing just on the UI5 toolkit one can categorize the applications into freestyle and Fiori element applications. The former group uses javascript, xml and other dependent web technologies during development to come to the desired solution regarding UI and ABAP regarding backend. This allows catering for unique needs and designs.
+&lt;/p&gt;
+
+&lt;p&gt;
+However the Pareto principle is effective here as well, 80 percent of the solutions follow the same analogy so why develop the same layout over and over again for a similar task? That is where Fiori Elements comes into the play as it allows to use metadata annotations to generate the layout in the backend instead of imperatively implementing it in the frontend in different html, css and javascript files.
+&lt;/p&gt;
+
+&lt;p&gt;
+This latter technology is most likely built on CDS views with ABAP mixed in at some point (with a few javascript exit possibilities on the UI side).
+&lt;/p&gt;
+
+&lt;p&gt;
+To go even further the backend part may follow implementations of the ABAP Programming Model for SAP Fiori or embrace even newer ways of ABAP Restful Programming Model that relies on a concept analogous to Business Objects Processing Framework (BOPF).
+&lt;/p&gt;
+
+&lt;p&gt;
+As a result, the traditional approach of having one-developer-to-rule-them-all is void. Fiori requires a different mind- and toolset than what is present in the ABAP world today. SAP has started evolving technologies at a previously unprecedented rate, it is not just the number of supported business processes, which grow release by release but the available technical ways as well. Therefore some developers will embrace UI technologies, some will specialize in the backend stack and a few will have a good overall understanding of both. Not every technology is for everyone. This will lead to a
+change in:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;what kind of expertise is needed&lt;/li&gt;
+&lt;li&gt;and how many people will be able to cover the technology stack to provide the needed support for the backbone IT solution of your business.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org8825279" class="outline-3"&gt;
+&lt;h3 id="org8825279"&gt;&lt;span class="section-number-3"&gt;2.3.&lt;/span&gt; Fiori is not the enemy&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-3"&gt;
+&lt;p&gt;
+Based on the picture depicted above one may believe that S/4 is unnecessarily complicated from a technology perspective. Yes, it is more complex due to evolutionary reasons than an ECC but it can be tamed. Technology can be learned. We have already trained clients in Fiori and I have no doubt that they will be capable of tackling Fiori related issues and developments as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+If that process is started in time then I see no reason why this would be less manageable than any other non-SAP custom solution which is realised by a symbiosis of different technologies.
+&lt;/p&gt;
+
+&lt;p&gt;
+What is more, learning Fiori can be started even in a non S/4 environment with selected applications or a single custom development or even with a cloud based instance, which does not require significant upfront costs.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org14d24d5" class="outline-2"&gt;
+&lt;h2 id="org14d24d5"&gt;&lt;span class="section-number-2"&gt;3.&lt;/span&gt; Prepare for it and use it as a leverage&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Why all the hassle? Because Fiori brings capabilities with it that no one could have dreamt of in an ECC world without third party solutions. Do you want to use your phone to approve a purchase order? Do you want to have reports available on your iPad? Do you want to have an overview of how well your suppliers perform this month, all aspects on a single page in an easy to consume graphical format? No problem, S/4 comes with batteries included. And if you want more, the door is open for further custom development be it just a report or a whole app that focuses on your unique process.
+&lt;/p&gt;
+
+&lt;p&gt;
+What you may do as a preparation:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;discover the Fiori Launchpad and its capabilities, including authorization aspects&lt;/li&gt;
+&lt;li&gt;ensure that new backend technology knowledge is available: new ABAP syntax, learn and understand object oriented programming, CDS, ABAP Restful Programming Model known as RAP, or in case of cloud check the Cloud Application Programming Model known as CAP as well, Eclipse with ABAP Development Tools&lt;/li&gt;
+&lt;li&gt;ensure that new frontend technology knowledge is available: Fiori Design Guidelines, UI5 toolkit, UI5 tooling&lt;/li&gt;
+&lt;li&gt;learn how the development process differs from an ABAP development (design thinking, wireframes)&lt;/li&gt;
+&lt;li&gt;use the freely available openSAP courses&lt;/li&gt;
+&lt;li&gt;get to know the SAP Fiori Apps Reference Library&lt;/li&gt;
+&lt;li&gt;implement an application that is available for your existing landscape, refer to the Fiori Apps Library&lt;/li&gt;
+&lt;li&gt;develop a Fiori application to get a real insight into the possibilities and start mastering the nuts and bolts of the process&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Note that most of the above has something to show not just for developers but consultants as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+They also have to learn how a Fiori app specification can and should be provided and what they may expect from the technology. The above journey may take some time so it is best to start embarking right now even if your organization does not intend to use S/4 in the next year.
+&lt;/p&gt;
+
+&lt;p&gt;
+With great power comes great responsibility – this is true in the case of Fiori. Compared to what is available in an ECC system both in speed, line of business solutions and user experience one cannot mention the old and the new world on the same page. But in order to leverage the possibilities it is best to prepare ourselves for the transition and have a concept ready to flatten the waves and ensure smooth sailing so that we may enjoy the sunshine.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="Fiori"></category><category term="programming"></category><category term="sap"></category><category term="fiori"></category><category term="s4hana"></category><category term="ui5"></category><category term="work"></category></entry><entry><title>Az S/4-gyel együtt a Fiori is megérkezik, az Ön cége felkészült a változásra?</title><link href="https://szebenyib.github.io/s4_comes_with_fiori-hu.html" rel="alternate"></link><published>2022-01-20T00:00:00+01:00</published><updated>2022-12-27T00:00:00+01:00</updated><author><name>Balint Szebenyi</name></author><id>tag:szebenyib.github.io,2022-01-20:/s4_comes_with_fiori-hu.html</id><summary type="html">Az S/4 arca a Fiori. Ez az új technológia olyan új lehetőségeket hoz, amelyek korábban elképzelhetetlenek voltak. Ha igazán szeretnénk kiaknázni a lehetőségeket, akkor érdemes rá felkészülni.</summary><content type="html">&lt;div id="table-of-contents" role="doc-toc"&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id="text-table-of-contents" role="doc-toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#orgcece603"&gt;1. Bevezetés&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org179d26c"&gt;2. A Fiori nem új, de mindig készen áll a megújulásra&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#orgc2c2bf1"&gt;2.1. A Fiori megkerülhetetlen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#orgcc48991"&gt;2.2. A Fiori több, mint gondolná&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org63197b7"&gt;2.3. A Fiori nem ellenség&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#org43a80b5"&gt;3. Készüljünk fel rá és használjuk ki az előnyeit!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+A bejegyzés eredetileg a &lt;a href="https://onespire.hu/sap-hirek/fiori-felkeszules-2021/"&gt;Onespire&lt;/a&gt; oldalán jelent meg.
+&lt;/p&gt;
+
+&lt;div id="outline-container-orgcece603" class="outline-2"&gt;
+&lt;h2 id="orgcece603"&gt;&lt;span class="section-number-2"&gt;1.&lt;/span&gt; Bevezetés&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Szerintünk helytálló azt feltételezni, hogy minden olyan vállalkozás hallott már Fiori-ról, amely SAP megoldást használ. Még azon vállalatoknak is találkozniuk kellett Fiorival, akik még ECC rendszert használnak, akár a SAP TechEd rendezvényen vagy más, hasonló rendezvényen. De ha máshol nem is, a hibajegyek feladására használt SAP Support Launchpad miatt már biztosan ismerősnek kell lennie a Fiori által képviselt vizuális megjelenésnek.
+&lt;/p&gt;
+
+&lt;p&gt;
+Vannak olyan ügyfeleink, akik elkezdtek kísérletezni üzletág-specifikus Fiori alkalmazásokkal, egy-egy konkrét folyamat kapcsán. Mások az ECC megoldásukat frissítik S/4 HANA-ra, vagy éppen egy zöldmezős S/4 bevezetést terveznek.
+&lt;/p&gt;
+
+&lt;p&gt;
+Végeredményben mindegy, hogy az ECC-S/4 közötti átmenet mely fázisában van egy vállalat, előbb vagy utóbb a Fiori része lesz az üzemeltetett SAP környezetnek. Az átmenetben rejlő különbség az, hogy ez mekkora hatást fog gyakorolni az ügyfelek mindennapjaiban.
+&lt;/p&gt;
+
+&lt;p&gt;
+Alapesetben azt mondhatnánk, hogy a Fiori terjedése lépésről-lépésre történik, ahogy a technológia egyre több területet meghódít, de már nem ez a helyzet. Ha egy S/4 bevezetésről van szó, a Fiori ott lesz. Elkerülhetetlenül.
+&lt;/p&gt;
+
+&lt;p&gt;
+Azért gyűjtöttük össze a tapasztalatainkat a cikkünkben, hogy fel tudjon készülni a találkozásra és ki tudja használni a benne rejlő lehetőségeket.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org179d26c" class="outline-2"&gt;
+&lt;h2 id="org179d26c"&gt;&lt;span class="section-number-2"&gt;2.&lt;/span&gt; A Fiori nem új, de mindig készen áll a megújulásra&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-orgc2c2bf1" class="outline-3"&gt;
+&lt;h3 id="orgc2c2bf1"&gt;&lt;span class="section-number-3"&gt;2.1.&lt;/span&gt; A Fiori megkerülhetetlen&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;p&gt;
+Egy S/4 bevezetés esetén a Fiori nem kerülhető meg. Nem lehet figyelmen kívül hagyni, mert az új alkalmazások és az új funkciók a Fiori megoldásokon keresztül jelennek meg, míg ezzel párhuzamosan a hagyományos SAPGUI alkalmazások fokozatosan kivezetésre kerülnek.
+A tapasztalatunkat ökölszabályként összefoglalva azt mondhatjuk, hogy a SAPGUI-t a jövőben kizárólag a tanácsadók eszközének kell tekinteni. A végfelhasználó a napi munkafolyamatai során normál körülmények között nem kerül kapcsolatba a SAPGUI-val, hanem a Fiori és a Fiori-szerű alkalmazásokkal dolgozik.
+&lt;/p&gt;
+
+&lt;p&gt;
+Ez azt jelenti, hogy a Fiori alkalmazások, a hagyományos ALV-s ABAP-riportok (egy olyan generált formában, amelyet WebGUI-nak vagy SAPGUI for HTML-nek neveznek), illetve a WebDynpro lesz a végfelhasználó és az SAP-rendszer közötti megjelenítő felület – egy webböngészőben.
+&lt;/p&gt;
+
+&lt;p&gt;
+Joggal merül fel a kérdés, hogy miért csak általánosságban igaz a fenti kijelentés, miért nem futhat minden egy böngészőben? Azért, mert vannak olyan SAPGUI-ban elérhető elemek, amelyek böngészővel nem kompatibilis technológiákat használnak, nem érnek el olyan erőforrásokat, amelyeket egy natív asztali alkalmazás el tud. Az SAP PPDS jó példa egy ilyen kivételre, mivel van benne egy olyan kiemelten fontos képernyő, amely egy speciális UI megoldásra épül, és így nem jeleníthető meg a SAPGUI for HTML-n keresztül.
+&lt;/p&gt;
+
+&lt;p&gt;
+Ha már megemlítésre került a WebGUI és érdekelnék a technikai részletek a korlátok kapcsán, akkor a következő SAP noteokban talál további információt:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://launchpad.support.sap.com#/notes/2283933"&gt;https://launchpad.support.sap.com#/notes/2283933&lt;/a&gt; - WebGUI File Browser: FAQ for the new applet-free frontend service methods implementation.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://launchpad.support.sap.com#/notes/2868608"&gt;https://launchpad.support.sap.com#/notes/2868608&lt;/a&gt; - 7.21: SAP GUI for HTML functionality / Limitations / Sp. Behaviour&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgcc48991" class="outline-3"&gt;
+&lt;h3 id="orgcc48991"&gt;&lt;span class="section-number-3"&gt;2.2.&lt;/span&gt; A Fiori több, mint gondolná&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-2"&gt;
+&lt;p&gt;
+A hagyományos értelmezés szerint a Fiori egy felhasználói felület, amely az UI5 eszköztáron alapul, és megfelel azoknak az elveknek és iránymutatásoknak, amelyeket az SAP publikál és naprakészen tart.
+&lt;/p&gt;
+
+&lt;p&gt;
+Bár ez is egyfajta értelmezés, de meg kell jegyezni, hogy a frontend nem önmagában létezik, hanem össze van kapcsolva a backend rendszerrel.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tehát ahelyett, hogy csak magát a felhasználói felületet vizsgálnánk, nézzük meg a teljes technológiai vertikumot, egy on premise (tehát nem cloudos) bevezetés esetén. Ez az, amit Önnek, mint ügyfélnek napi rendszerességgel támogatnia kell majd ahhoz, hogy a rendszer és a vállalat napi működését biztosítani tudja.
+&lt;/p&gt;
+
+&lt;p&gt;
+Az első amit tisztázni kell, hogy valójában nem minden Fiori, amit a végfelhasználó Fiori-nak gondol. Ahogy feljebb említettük, lehet, hogy egy Embedded Analytics által működtetett analitikus lekérdezésről, egy ősidők követeként feltűnő WebDynpro alkalmazásról, egy legacy ALV riportról, vagy egy valódi UI5 / Fiori alkalmazásról van szó.
+&lt;/p&gt;
+
+&lt;p&gt;
+Eggyel tovább lépve és csak az UI5 eszköztárra összpontosítva az alkalmazásokat freestyle és Fiori elements kategóriákba lehet sorolni. Az előbbi kategóriába tartozó alkalmazások elkészítéséhez javascriptet, xml-t és más kapcsolódó webes technológiákat kell használni a fejlesztés során a kívánt megoldást eléréséhez a felhasználói felület esetén, illetve ABAP-ot, esetleg CDS view-kat a backend terén. Ha ilyen alkalmazásokat készítünk, akkor lehetőségünk van a felületek teljesen egyedi igényeknek megfelelő kialakítására.
+&lt;/p&gt;
+
+&lt;p&gt;
+Azonban a Pareto-elv itt is érvényes, ha a megoldások 80%-a ugyanazt az mintát követi, akkor miért kellene lefejleszteni ugyanazt az elrendezést újra és újra egy hasonló feladat esetén? Ez az ahol a Fiori Elements szerepet kap, mivel lehetővé teszi az úgynevezett metaadat annotációk használatát a layout backendben történő kialakításához, ahelyett, hogy azt képernyőnként külön kellene imperatív módon különböző html, css, javascript fájlokban lekódolni.
+&lt;/p&gt;
+
+&lt;p&gt;
+Ez utóbbi felállás nagy valószínűséggel CDS nézetek segítségével kerül kialakításra, esetlegesen egy-két ABAP-exit (és esetlegesen egy-két javascript-exit) felhasználásával.
+&lt;/p&gt;
+
+&lt;p&gt;
+Sőt, a backend felhasználhatja az SAP Fiori Programming Model-t, vagy még tovább menve, a jelenleg legkorszerűbbnek számító paradigmaként megjelölt ABAP Restful Programming Model lehetőségeit. Utóbbi a Business Objects Processing Framework (BOPF)-höz hasonló elven alapul.
+&lt;/p&gt;
+
+&lt;p&gt;
+A fentiekből következően az "az ABAP fejlesztő" , mint "A" fejlesztő megközelítés nem működik. A Fiori eltérő gondolkodásmódot és eszköztárat igényel, mint ami az ABAP világában megszokott. Az SAP korábban soha nem látott ütemben kezdte fejleszteni a különböző technológiákat, nem csak a támogatott üzleti folyamatok számát, amely verzióról verzióra nőtt, hanem a rendelkezésre álló technikai eszköztárat tekintve is. Ezért lesznek olyan fejlesztők, akik a frontend technológiák irányába fognak elmozdulni, mások a backend megoldásokra szakosodnak majd, és lesznek olyanok is, akik mindkettőről fognak ismeretekkel rendelkezni, de kisebb vertikális kiterjedéssel. Nem vagyunk egyformák és nem érdekli mindegyik fejlesztőt mindkét világ. Emiatt változni fog az, hogy:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;milyen szaktudásra van szükség,&lt;/li&gt;
+&lt;li&gt;illetve hogy hány ember lesz képes lefedni a különböző technológiákat azért, hogy a mindennapi üzletmenet zökkenőmentes legyen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org63197b7" class="outline-3"&gt;
+&lt;h3 id="org63197b7"&gt;&lt;span class="section-number-3"&gt;2.3.&lt;/span&gt; A Fiori nem ellenség&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-3"&gt;
+&lt;p&gt;
+A fent leírtak alapján úgy tűnhet, hogy az S/4 technológiai szempontból szükségtelenül bonyolult és minden jobb volt a SAPGUI-s világban. El kell ismerni, az S/4 evolúciós okokból összetettebb, mint az ECC, de meg lehet szelidíteni. A technológiát meg lehet tanulni. Nem egy ügyfelünknél tartottunk Fiori oktatást, több alkalmon keresztül, felölve fejlesztést és backend és frontend fejlesztést, és nincs kétségünk afelől, hogy képesek lesznek megoldani mindent, ami Fiorihoz kapcsolódik.
+&lt;/p&gt;
+
+&lt;p&gt;
+Szerintünk, ha a felkészülés az új világra időben elkezdődik, akkor nem látjuk annak okát, hogy miért lenne ez a megoldás kevésbé kezelhető, mint bármely másik, nem SAP alapú egyedi megoldás, amely különböző technológiákat használ.
+&lt;/p&gt;
+
+&lt;p&gt;
+Sőt mi több, a Fiori elsajátítását már akkor is el lehet kezdeni, ha egy S/4-es környezet még nem áll rendelkezésre. El lehet indulni egy-egy kiválasztott alkalmazás beaktiválásán, egy egyedi fejlesztésen keresztül, vagy akár egy felhő alapú környezet segítségével, ami nem igényel jelentős kezdeti befektetést.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org43a80b5" class="outline-2"&gt;
+&lt;h2 id="org43a80b5"&gt;&lt;span class="section-number-2"&gt;3.&lt;/span&gt; Készüljünk fel rá és használjuk ki az előnyeit!&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Miért ez a nagy fejhajtás a Fiori körül? Azért, mert a Fiori olyan lehetőségeket biztosít, amelyeket az ECC világában elképzelni sem lehetett third party megoldások nélkül. Szeretné a telefonját használni a megrendelések jóváhagyására? Az iPadjén akar elérni egyes riportokat? Szeretné áttekinteni, hogyan teljesítenek a beszállítói ebben a hónapban, egy képernyőn, könnyen érthető grafikus formában megjelenítve minden lényeges szempontot? Nem probléma, az S/4 ezt alapból tudja. De ha még több igény merülne fel, akkor lehetőség van további egyedi fejlesztésekre is, legyen szó csak egy riportról, vagy egy teljes alkalmazásról, amely egy speciális folyamatot fed le.
+&lt;/p&gt;
+
+&lt;p&gt;
+Amit felkészülésként megtehet:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;ismerje meg a Fiori Launchpadot és annak képességeit, beleértve a jogosultsági koncepciót,&lt;/li&gt;
+&lt;li&gt;biztosíthatja, hogy mire eljön az idő, az új backend technológiai tudás rendelkezésre álljon, ehhez foglalkozni kell az új ABAP szintaxissal, az objektum orientált ABAP megértésével, CDS nézetekkel, az ABAP Restful Programming Modellel (RAP), illetve felhős környezetben a Cloud Application Programming Modellel (CAP), valamint az új fejlesztőeszközzel, az Eclipse-szel,&lt;/li&gt;
+&lt;li&gt;ahhoz, hogy mindez frontend oldalon is meglegyen, a következő témákat ajánlott tanulmányozni: Fiori Design Guidelines, UI5 toolkit, UI5 tooling,&lt;/li&gt;
+&lt;li&gt;ezzel egyben ismert lesz az is, hogy egy frontend fejlesztés miben tér el egy ABAP fejlesztéstől (design thinking, képernyőtervek),&lt;/li&gt;
+&lt;li&gt;érdemes kihasználni az openSAP tanfolyamokat,&lt;/li&gt;
+&lt;li&gt;célszerű böngészni a Fiori Alkalmazáskönyvtárat (Fiori Apps Reference Library),&lt;/li&gt;
+&lt;li&gt;bevezethet proof-of-concept jelleggel egy, a meglévő környezetéhez elérhető alkalmazást, lásd Fiori Alkalmazáskönyvtár&lt;/li&gt;
+&lt;li&gt;fejleszthet egy Fiori alkalmazást, hogy valódi betekintést nyerjen a lehetőségek tárházába, és megismerje a fejlesztés csínját-bínját.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Megjegyeznénk, hogy a fentiek többsége nem csak a fejlesztők, hanem a tanácsadók számára is hasznos lehet. Nekik is meg kell tanulniuk, hogyan lehet és hogyan érdemes a Fiori alkalmazások specifikációját elkészíteni, illetve hogy milyen lehetőségek rejlenek a technológiában.
+&lt;/p&gt;
+
+&lt;p&gt;
+A fenti tanulási folyamat időbe telhet, ezért a legjobb, ha mihamarabb elkezdjük azt, még akkor is ha nem tervezünk jövőre S/4 bevezetést.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nagy hatalommal nagy felelősség is jár, ez a Fiori esetében is igaz.
+&lt;/p&gt;
+
+&lt;p&gt;
+Összehasonlítva azzal, hogy egy ECC rendszerben mi érhető el a sebesség, az üzleti megoldások, illetve a felhasználói élmény tekintetében, a régi és az új világ nem említhető egy lapon. De annak érdekében hogy ki tudjuk használni a lehetőségeket, a legjobb felkészülni az átállásra. Ha felkészülünk, akkor nem érhet minket baj és élvezhetjük az elmúlt évek technológiai fejlődésének vívmányait.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="Fiori"></category><category term="programming"></category><category term="sap"></category><category term="fiori"></category><category term="s4hana"></category><category term="ui5"></category><category term="work"></category></entry></feed>
