@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="szebenyib Atom">
+
+
+
+ 
+
+<meta name="author" content="Balint Szebenyi" />
+<meta name="description" content="Fiori is not the magical solution for all your problems. Yes, it might be more expensive than a classic SE38 ABAP report. But it might be well worth choosing it. When? I have collected a handful of cases when you should consider using Fiori as the frontend solution." />
+<meta name="keywords" content="fiori, fiori_vs_abap, manager_perspective">
+
+<link rel="alternate" href="/when_to_choose_fiori.html" hreflang="en" />
+<link rel="alternate" href="/when_to_choose_fiori-hu.html" hreflang="hu" />
+
+  <meta property="og:site_name" content="szebenyib"/>
+  <meta property="og:title" content="When to choose Fiori as the frontend instead of ABAP?"/>
+  <meta property="og:description" content="Fiori is not the magical solution for all your problems. Yes, it might be more expensive than a classic SE38 ABAP report. But it might be well worth choosing it. When? I have collected a handful of cases when you should consider using Fiori as the frontend solution."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/when_to_choose_fiori.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2023-01-26 00:00:00+01:00"/>
+  <meta property="article:modified_time" content="2023-01-27 00:00:00+01:00"/>
+  <meta property="article:author" content="/author/balint-szebenyi.html">
+  <meta property="article:section" content="Fiori"/>
+  <meta property="article:tag" content="fiori"/>
+  <meta property="article:tag" content="fiori_vs_abap"/>
+  <meta property="article:tag" content="manager_perspective"/>
+  <meta property="og:image" content="static/images/profile.jpg">
+
+  <title>szebenyib &ndash; When to choose Fiori as the frontend instead of ABAP?</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="static/images/profile.jpg" alt="Balint's blog" title="Balint's blog">
+    </a>
+
+    <h1>
+      <a href="/">Balint's blog</a>
+    </h1>
+
+    <p>Embedded Analytics, Fiori, ABAP</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/category/fiori.html" >Fiori</a>
+          </li>
+          <li>
+            <a target="_self" href="/tag/manager_perspective" >Manager perspective</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-rss"
+           href="feeds/all.atom.xml"
+           target="_blank">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/balint-szebenyi/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/szebenyib"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+          <div class="translations">
+    <a class="active" href="/when_to_choose_fiori.html">en</a>
+        <a href="/when_to_choose_fiori-hu.html">hu</a>
+    </div>
+
+    <h1 id="when_to_choose_fiori">When to choose Fiori as the frontend instead of ABAP?</h1>
+    <p>
+      Posted on 2023-01-26 in <a href="/category/fiori.html">Fiori</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0e2810a">1. Introduction</a></li>
+<li><a href="#org1275a2c">2. Use cases</a>
+<ul>
+<li><a href="#orgcbe01c4">2.1. Mobile access</a></li>
+<li><a href="#orgb18cb05">2.2. Focus on the process</a></li>
+<li><a href="#org6a9f57e">2.3. Time is money</a></li>
+<li><a href="#orgbf4de4a">2.4. No SAPGUI access</a></li>
+<li><a href="#org1195471">2.5. Technology makes Fiori easier</a></li>
+<li><a href="#orge1acfb9">2.6. Alignment to other apps</a></li>
+<li><a href="#org4233f19">2.7. UI feature not available in SAPGUI</a></li>
+<li><a href="#org6bbe629">2.8. Non-SAP backend</a></li>
+</ul>
+</li>
+<li><a href="#org7883113">3. Checklist for decision</a></li>
+</ul>
+</div>
+</div>
+<p>
+The article was originally published on <a href="https://onespire.net/news/s4-comes-with-fiori/">Onespire.net</a>
+</p>
+
+<div id="outline-container-org0e2810a" class="outline-2">
+<h2 id="org0e2810a"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Many times clients are faced with the question: shall we go with ABAP reports
+	or choose Fiori? Fiori is more expensive. More features, more bells and
+	whistles need time to get them right, which in turn results in a higher
+	number of mandays compared to an ABAP report. As such it is not always the go
+	to solution and rightfully so. But there are many cases when it is well worth
+	spending on Fiori and I have collected a handful of them.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1275a2c" class="outline-2">
+<h2 id="org1275a2c"><span class="section-number-2">2.</span> Use cases</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgcbe01c4" class="outline-3">
+<h3 id="orgcbe01c4"><span class="section-number-3">2.1.</span> Mobile access</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Many IT organizations have taken steps into the direction of making IT
+processes available on mobile phones.
+</p>
+
+<p>
+Just imagine that you are a responsible for approving purchase requisitions
+for a certain cost center. If you were to approve that it would most likely
+find you via a workitem, which would be accessible in SAP Business Workplace
+(SBWP). 
+</p>
+
+<p>
+Let's say you are at home after a hard day's work but someone needs the
+approval <b>right now</b>.
+</p>
+
+<p>
+You go and fetch your laptop from your car. You power it on. Wait for it to
+boot. Wait ten minutes for the regular windows update. Wait for the VPN to
+connect, entering all sorts of 2FA codes. Launch SAPGUI directly or via a
+link from your Outlook that again takes precious time to load. Logon to the
+appropriate SAP system. Navigate to SBWP. Find the workitem and navigate
+to other transactions to see if everything matches. Finally hit accept.
+</p>
+
+<p>
+Enter another world, where Fiori is present. You take out your phone that is
+always with you. You open the corporate browser, which seamlessly connects
+via VPN without any input required from you and then you logon to Fiori
+Launchpad, with the My Inbox tile on top. See the newest workitem on top with
+all the necessary information listed in the details. Hit accept.
+</p>
+
+<p>
+Which one would you choose?
+</p>
+
+<p>
+Yes the above will most likely not work out of the box. Besides the IT
+infrastructure you have to make sure that your workflow supports My Inbox and
+displays the necessary data that is needed to meet the decision and handle it
+as well. But you only have to do that development once and your managers will
+be grateful for the comfort you provide them with.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb18cb05" class="outline-3">
+<h3 id="orgb18cb05"><span class="section-number-3">2.2.</span> Focus on the process</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Have you ever worked with a transaction just to use only a
+	fraction of the functionality it provides but to combat all its complexity?
+</p>
+
+<p>
+Sometimes it is easier from a programming perspective to group together
+	activities that have far reaching capabilities. These activities require
+	different fields but all of them are present to the end user on different
+	tabs that keep appearing and hiding. Don't hide MIGO, I'm looking at you.
+</p>
+
+<p>
+If one can instead put the end user first, focus on the process then all
+	this unnecessary complexity can be avoided. With less complexity come less
+	error possibilities for the end user, more transparency and as a result
+	higher speed and daily efficiency.
+</p>
+
+<p>
+If many users rely on processes that can be simplified this way one can
+	gain an advantage that can be easily materialized.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a9f57e" class="outline-3">
+<h3 id="org6a9f57e"><span class="section-number-3">2.3.</span> Time is money</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+This comes hand in hand with mobile access. But it is even more.
+</p>
+
+<p>
+Let's imagine that you have to pay a provider a certain fee as long as their
+	truck is waiting for unloading in your warehouse. That immediately highlights
+	how crucial it is that the unloading process should be as foolproof and fast
+	as possible.
+</p>
+
+<p>
+If you use paper for this purpose you are forced to double record what is
+	happening (once on paper in the field, then into the system back in the
+	office). This can lead to errors.
+</p>
+
+<p>
+In case you were to use a phone or a tablet to support this process you would
+	be able to record in real time what is going on. You can reorder items based
+	on their importance. You can check details of items on the spot. You can
+	rearrange items as you go. You can scan barcodes. You can search for 
+	products and items during the process. And you don't have to
+	record things twice.
+</p>
+
+<p>
+This is again a use case that shows that Fiori development costs can be
+	compensated.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbf4de4a" class="outline-3">
+<h3 id="orgbf4de4a"><span class="section-number-3">2.4.</span> No SAPGUI access</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Not all clients have access to SAPGUI, at least not all their subsidiaries.
+Yet they somehow need to have access to a small set of SAP data and not just
+for reporting.
+</p>
+
+<p>
+Fiori can help also in that case.
+</p>
+
+<p>
+How? From the ground up. Such subsidiaries know nothing of SAP terminology,
+they have no SAPGUI experience but somehow they should be made aware of what
+they are getting. This is easily accomplishable with the help of Fiori
+wireframes. The wireframe part translates to a word file that the client may
+comment. It includes screen designs of the application, including the layout,
+including all fields annotated with remarks as to where the data comes from,
+including functionality that is available for the end user.
+</p>
+
+<p>
+The end user doesn't even have to know about SAP or Fiori. Because if the UI
+has to be explained it is wrong. The solution should be intuitive and the
+SAPUI5 toolkit beyond Fiori is up to the task.
+</p>
+
+<p>
+After iterating with the client both the end users and the developers have a
+picture of the application. One knows what to expect, while the other knows
+what to deliver. Since this exploration phase can be easily split from the
+development this also allows handling the two phases separately both
+financially or even with different parties if need be.
+</p>
+
+<p>
+As for the no SAPGUI access part the advantage of Fiori is trivial. There is
+no SAPGUI to be installed and supported at the subsidiary because all is
+needed is a web browser.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1195471" class="outline-3">
+<h3 id="org1195471"><span class="section-number-3">2.5.</span> Technology makes Fiori easier</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+In certain cases the unbelievable might be true. Fiori might be cheaper than
+using an ABAP report.
+</p>
+
+<p>
+This is the case when using
+<a href="https://community.sap.com/topics/abap/rap">RAP</a>. This technology puts
+Fiori first and allows for a quicker Fiori path than ABAP. Since a lot of
+metadata is built into the low layers of the app, recreating the
+functionality derived from that in case of a Fiori Elements app in ABAP would
+take more time.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge1acfb9" class="outline-3">
+<h3 id="orge1acfb9"><span class="section-number-3">2.6.</span> Alignment to other apps</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+It is possible that a business unit uses Fiori apps. In that case offering
+them non-Fiori apps will be a step back. A step back in functionality, a step
+back in coherence, and overall a step back in user satisfaction.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4233f19" class="outline-3">
+<h3 id="org4233f19"><span class="section-number-3">2.7.</span> UI feature not available in SAPGUI</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+In case one has never taken a look at what is possible in SAP Fiori, it is
+definitely worth giving it a try. It may reveal areas that one has never
+imagined to be possible and useful.
+</p>
+
+<p>
+Check out:
+</p>
+<ul class="org-ul">
+<li>the <a href="https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/">Fiori apps reference library</a></li>
+<li>the <a href="https://ui5.sap.com/controls">UI5 toolkit</a></li>
+<li>the <a href="https://experience.sap.com/fiori-design-web/explore/">Fiori Design Guidelines</a></li>
+</ul>
+<p>
+for ideas.
+</p>
+
+<ul class="org-ul">
+<li>Maps?</li>
+<li>3D object visualization?</li>
+<li>All types of charts imaginable?</li>
+<li>Multiple diagrams combined on the same page?</li>
+<li>Graphs and charts on the same page?</li>
+<li>Wizard like process flows?</li>
+<li>Network graphs?</li>
+<li>T account representations?</li>
+</ul>
+
+<p>
+The SAPUI5 toolkit will have you covered.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6bbe629" class="outline-3">
+<h3 id="org6bbe629"><span class="section-number-3">2.8.</span> Non-SAP backend</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+Fiori's SAPUI5 toolkit is not SAP-only. If your data source can speak OData
+you may leverage Fiori. Or go even one step further: you are not a SAP
+customer and have no access to SAPUI5. You can still use openUI5 at no cost
+for free with the exception of Fiori Elements.
+</p>
+
+<p>
+So you can create Fiori apps even for non-SAP backends. And you can integrate
+them into your landscape next to all the other Fiori apps. This really raises
+the limits as to what you may achieve with Fiori.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7883113" class="outline-2">
+<h2 id="org7883113"><span class="section-number-2">3.</span> Checklist for decision</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>Is mobile access needed?</li>
+<li>Can Fiori make the end users' routine task faster?</li>
+<li>Can Fiori make the business process faster?</li>
+<li>Is SAPGUI access not present?</li>
+<li>Is RAP a suitable choice for the business case technically?</li>
+<li>Do the end users use Fiori for everything?</li>
+<li>Do you need something special on the UI?</li>
+<li>Do you intend to integrate a third party system capable of OData?</li>
+</ul>
+
+<p>
+If the answer is yes, then Fiori is a logical choice.
+</p>
+</div>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/fiori.html">fiori</a>
+      <a href="/tag/fiori_vs_abap.html">fiori_vs_abap</a>
+      <a href="/tag/manager_perspective.html">manager_perspective</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " szebenyib ",
+  "url" : "",
+  "image": "static/images/profile.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>

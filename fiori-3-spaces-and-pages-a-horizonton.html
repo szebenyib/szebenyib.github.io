@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+
+
+
+ 
+
+<meta name="author" content="Balint Szebenyi" />
+<meta name="description" content="A bejegyzés eredetileg a Onespire oldalán jelent meg. Fiori 1-2-3 - mi is ez valójában? A SAP Fiori fogalom 2013 környékén jelent meg. Ekkor jelentek meg az első Fiori alkalmazások. 25, hogy pontosak legyeünk. Sok idő telt el azóta és egyre több ügyfél indul el az S/4HANA és a SAP …" />
+<meta name="keywords" content="">
+
+
+  <meta property="og:site_name" content="szebenyib"/>
+  <meta property="og:title" content="Fiori 3 - Spaces and Pages a Horizonton"/>
+  <meta property="og:description" content="A bejegyzés eredetileg a Onespire oldalán jelent meg. Fiori 1-2-3 - mi is ez valójában? A SAP Fiori fogalom 2013 környékén jelent meg. Ekkor jelentek meg az első Fiori alkalmazások. 25, hogy pontosak legyeünk. Sok idő telt el azóta és egyre több ügyfél indul el az S/4HANA és a SAP …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/fiori-3-spaces-and-pages-a-horizonton.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-10-26 00:00:00+02:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/balint-szebenyi.html">
+  <meta property="article:section" content="Fiori"/>
+  <meta property="og:image" content="">
+
+  <title>szebenyib &ndash; Fiori 3 - Spaces and Pages a Horizonton</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/theme/img/profile.png" alt="Balint's blog" title="Balint's blog">
+    </a>
+
+    <h1>
+      <a href="/">Balint's blog</a>
+    </h1>
+
+    <p>Embedded Analytics, Fiori, ABAP</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about.html#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a target="_self"
+                 href="/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/category/fiori.html" >Fiori</a>
+          </li>
+          <li>
+            <a target="_self" href="/tag/manager_perspective" >Manager perspective</a>
+          </li>
+          <li>
+            <a target="_self" href="/tag/technical_perspective" >Technical perspective</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-LinkedIn"
+           href="https://www.linkedin.com/in/balint-szebenyi/"
+           target="_blank">
+          <i class="fa-brands fa-LinkedIn"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-Github"
+           href="https://github.com/szebenyib"
+           target="_blank">
+          <i class="fa-brands fa-Github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="fiori-3-spaces-and-pages-a-horizonton">Fiori 3 - Spaces and Pages a Horizonton</h1>
+    <p>
+      Posted on 2022-10-26 in <a href="/category/fiori.html">Fiori</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>A bejegyzés eredetileg a <a href="https://onespire.hu/sap-hirek/fiori-3-spaces-and-pages/">Onespire</a> oldalán jelent meg.</p>
+<h1>Fiori 1-2-3 - mi is ez valójában?</h1>
+<p>A SAP Fiori fogalom 2013 környékén jelent meg. Ekkor jelentek meg az első Fiori alkalmazások. 25, hogy pontosak legyeünk. Sok idő telt el azóta és egyre több ügyfél indul el az S/4HANA és a SAP BTP (Business Technology Platform) irányába, ahol ez az a technológia, amely több ezer appon keresztül az üzleti folyamatok motorját adja.</p>
+<p>Mint bármely más IT megoldás, ez is fejlődik. Az 1-2-3, mint mérföldkő nem a SAPUI5 eszközkészletre vonatkozik - amelyen a Fiori alapul -, hanem olyan nagyobb változásokra, amelyek az egész felhasználói élményt meghatározzák. Például a Fiori 2-vel jelent meg a több asztalt imitáló viewport koncepció, a Belize téma, az értesítések, a SAP CoPilot, valamint az első kiadása a natív mobilélményt kínáló SAP Fiori for iOS és Android.</p>
+<p>Azért hogy perspektívába helyezzük milyen gyorsan fejlődik ez a technológia, nézzük meg a SAPUI5 eszközkészletet. Legalább 2010 óta fejlesztik, és 2022 novemberéig legalább 107 kiadása volt (amelyek közül csak néhány ajánlott long term support keretein belül produktív használatra). Mindeközben a SAP Netweaver platform 8 kiadást ért meg, az S/4HANA pedig csak 2015-ben jelent meg.</p>
+<p>Habár a Fiori 3-at 2018-ban jelentették be, időbe telik mire elterjed. És az azóta eltelt időben is fejlődtek egyes részei, mint ahogy mondjuk a téma változott Quartzról Horizon-ra. Ez a cikk a két legújabb és itthon legrelevánsabbnak tartott fejleményt emeli ki.</p>
+<h1>Fiori 3 - mit jelent ma számunkra?</h1>
+<p>A legfontosabb jellemzője a Fiori 3-nak az egységesítés. Aki használja a SAP felhőjét, annak szolgáltatásait, az látja a SAP BTP-n, hogy a termékek egyre harmonizálódnak, mind designban, mind működésben. Mielőtt ez az egységesítés kimondásra került volna a SAP részéről a Fiori 3-mal, valamennyi terméknek megvolt a saját formavilága. Hasonlóak voltak, de csak hasonlóak; mindegyik kicsit másképp működött. De mivelhogy a felhasználói élmény (UX) kiemelten fontos a SAP számára, így azonos kinézetet és működést kell nyújtania, hogy termékeiről érezzék, azok koherensek és jól működnek egymással. Egy szoftvermegoldásokat szállító vállalat - egy arc a külvilág felé - egy design.</p>
+<p>Az egységesítés mellett természetesen egyre jobban integrálódnak gépi tanulásos megoldások (machine learning), megjelennek beszédfelismerő és arra reagáló interfészek (conversation interface) is. Ezek önmagukban is megérnek egy elemzést, de itt most két kézzelfoghatóbb aspektusát emelem ki a Fiori 3-nak, a spaces and pages koncepció (indítópult tartomány és oldalakként jelenik meg magyarul a rendszerben, de az angol terminológia kerül jelen írásban felhasználásra) és a Horizon téma megjelenését.</p>
+<h2>Spaces and pages</h2>
+<h3>Bevezetés</h3>
+<p>A spaces and pages a legújabb és legjobb módja jelenleg a Fiori Launchpad használatának és annak tartalmának elrendezéséhez.</p>
+<p>Aki már egy ideje használ Fiori Launchpadot, az tisztában van vele, hogy sajnos az elején nem tudta hozni azokat az elvárásokat, amelyeket a felhasználók jogosan támasztanak vele szemben. Hosszú betöltési idők, böngésző inkompatibilás, lag mind javításért kiáltott - amit a SAP meg is tett. Legvalószínűbb, hogy Ön már olyan rendszer használ, amelyekben ezek nem tapasztalhatóak. De mégis lehet jobb és megéri tovább menni.</p>
+<p>A spaces and pages egy három rétegű csempe szervezést tesz lehetővé. A korábbi felállással szemben, ahol csak csoportok szolgáltak a vizuális rendezésre, itt most több lehetőség is van. Csoportok (szekciók) továbbra is képezhetőek, de azok már oldalakba rendezhetők. Úgy kell ezt elképzelni, mintha az eddigi Fiori Launchpad egyetlen ilyen oldalból állt volna. Most már azonban több ilyen is lehet. Ahhoz, hogy könnyebb legyen a navigáció ezek között az oldalak között, az összetartozóak spacekbe vonhatóak össze. Ez azt jelenti a gyakorlatban, hogy a korábbi címsor, amelyben a csoportok szerepeltek, most úgy működik, mintha lenyíló menük lennének, ahol az egyes elemek az oldalakat jelentik.</p>
+<h3>Kit érint?</h3>
+<p>A spaces and pages megközelítés az S/4HANA 2020-szal jelent meg on premise felállásnál és a 2021-es kiadás óta ez <b>a</b> mód, ahogy a Fiori Launchpad használandó. A csoportok S/4HANA 2021-en hivatalosan is elavultnak vannak deklarálva. Így tehát bárki, aki S/4HANA-t használ, vagy tervezi a váltást ECC-ről, az ebbe az irányba kell haladjon.</p>
+<h3>Következmények</h3>
+<p>Az átmenet a két világból energiát igényel a szervezettől. De szerencsére vannak rá eszközök és lehetőség, hogy mindez fázisolva, több lépcsőben is történhessen.</p>
+<p>Két lehetséges forgatókönyv van praktikusan:</p>
+<ul>
+<li>mindenki számára egy lépésben kötelezővé tenni</li>
+<li>szelektíven, opt-in módon elérhetővé tenni</li>
+</ul>
+<p>Ez utóbbi megközelítéssel válik lehetségessé a fázisolt implementáció. Ez azt jelenti, hogy bár elérhető az új spaces and pages elrendezés, a végfelhasználó egyetlen kattintással ki-be kapcsolhatja, hogy visszakapja a csoportjait, ha ez szükségessé válna. Ennek az az előnye, hogy simítani tudja a jogosultságokért felelős kollégák terhelését, mert a régi és az új világ egymás mellett létezhet - lehetnek olyan részlegek, amelyek már az új módon használják a rendszert, míg mások még csak készülnek rá. Miután mindneki átállt a preferált módra és stabil a megoldás a csoportok előhívását globálisan egy táblabejegyzéssel le lehet tiltani.</p>
+<p>Az opt-in megközelítés azt is lehetővé teszi, hogy a rendszeradminisztrátorok kipróbálják és megismerjék ezt a koncepciót egy fejlesztői rendszerben, anélkül hogy abból bárki bármit észrevenne.</p>
+<p>És hogyan telepítsük ezt az S/4HANA rendszerbe? Nem szükséges telepítés, már benne van. Egy beállítás varázsló egyetlen lépésével bekapcsolható.</p>
+<h3>Átállás</h3>
+<p>Az átállás nagy vonalakban fent ismertetésre került, de mi a helyzet a sztenderd szerepekkel? Mi a helyzet a már létező csoportokkal? Kezdjük a nulláról? Mi legyen a meglévő szerepekkel?</p>
+<p>Vegyük őket sorra!</p>
+<h4>Sztenderd szerepek</h4>
+<p>A sztenderd szerepekben ott vannak az előrekonfigurált spacek és pagek. Ezek alkothatják egy nulláról induló rendszer szerepeinek gerincét, de akár egy migrációét is. Ha az Ön szervezete sztenderd közeli szerepeket használ, akkor azok újramásolása és adaptációja fog a legkevesebb időbe kerülni.</p>
+<h4>Létező csoportok</h4>
+<p>Ha az Ön szerepei nagyon eltérnek a sztenderdtől, akkor valószíűleg azzal jár a legjobban, hoogyha azokat migrálja az új világba. Van erre egy eszköz, amely oldalakat tud létrehozni a már létező csoportokból. Ezzel gyorsabb lehet az átállás, csak arra kell figyelni hogy az eszköz az új oldalak létrehozását támogatja - a meglévőek módosítását már nem.</p>
+<h4>Indulás a nulláról</h4>
+<p>A Fiori paradigma itt is megjelenik: a végfelhasználó és a napi munkavégzése legyen a középpontban. Át kell gondolni, hogyan használják a rendszert, megismerni a felhasználási szokásokat és ez alapján kialakítani a feületet - így lehet a legtöbbet kihozni mind a rendszerből, mind a Fiori felületből. Ha egy korábbi implementáció során erre már nem volt idő, akkor ez egy jó alkalom lehet arra, hogy növeljük a felhasználók és így az egész szervezet hatékonyságát.</p>
+<h4>Létező szerepek</h4>
+<p>Ne féljünk a meglévő szerepek módosításától e tekintetben. Nem szükséges a szerepek másolása sem. Mivel a tartományok és a csoportok más jogosultsági objektumon keresztül vezérlődnek, így nem fognak összeakadni. Ez az oka annak is, hogy a régi és az új konepció egyszerre létezhet. Pontosan emiatt nem szükséges a régi szerepekből kivenni a csoportokat, mert ha globálisan letiltásra kerül a hozzáférés, akkor senki számára nem lesznek elérhetőek, még ha a szerepekben meg is találhatóak.</p>
+<h2>Horizon téma</h2>
+<p>Nem csak a Fiori világ az, ami fejlődik, és finomhangolódik a felhasználói igényekhez a különböző UX kutatások alapján, hanem a mögöttes eszközkészlet is. Valójában az eszközkészlet már vagy három évvel az első Fiori alkalmazások előtt már létezett.</p>
+<p>Ennek az eszközkészletnek a része a téma. Gondolhatnánk, hogy ez csak egy apró részlet, de ha összehasonlítjuk a különböző témákat, akkor egyből megértjük miért is nem az.</p>
+<p>A legújabb téma - a Blue Crystal, Belize, Quartz sorban - Horizon névre hallgat és szeretne egy friss élményt nyújtani. Egy olyat, amihez a telefonjainkon már hozzászokhattunk.</p>
+<p>Ezt a témát általános üzleti felhasználásra 2023 első negyedévére tervezik elérhetővé tenni, úgy hogy 2022 negyedik negyedévében már egy előzetes megjelenik belőle az S/4 on prem verziójában. Ez a gyakorlatban annyit tesz, hogy S/4HANA 2022-n már elérhető, pontosabban a SAP Fiori Front-End Server (FES) for SAP S/4HANA 2022 verziójában, ami most októberben jelent meg.</p>
+<p>A jó hír az, hogy ha nem történt módosítás a sztenderd témában, és nincsenek egyedi vezérlők (custom controls) saját fejlesztésű alkalmazásokban, akkor a téma használható minden további nélkül. Ha ez nem állja meg a helyét, akkor szükséges az új témán is átvezetni mindazokat a változásokat, amelyek a korábbin eszközölve lettek, meggyőződve arról hogy minél több alkalmazás minél több felbontásban olvasható marad.</p>
+<h1>Összefoglaló</h1>
+<p>Az SAP és az ERP rendszere nagyon gyorsan fejlődik, sokkal gyorsabban mint korábban. De az SAP elkötelezett az S/4HANA stabilitása iránt, mindamellett hogy új és új funkciókat adnak a rendszerhez. A rendszer részét alkotó Fiori sem kivétel, jobb és jobb lesz. Ha folyamatosan figyelemmel kísérjük, akkor mindenkinek lehetősége van arra, hogy a legjobb és legújabb felhasználói élményben legyen része, amit a SAP kínálhat - minimális ráfordítás mellett.</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " szebenyib ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+</body>
+</html>

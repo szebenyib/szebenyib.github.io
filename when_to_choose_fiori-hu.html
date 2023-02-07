@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="szebenyib Atom">
+
+
+
+ 
+
+<meta name="author" content="Balint Szebenyi" />
+<meta name="description" content="A Fiori nem fogja megoldani az összes problémát. És igen, jó eséllyel többe fog kerülni mint egy ABAP riport. De mégis sok esetben megéri. Hogy mikor? Összeszedtem egy pár esetet, amikor megéri Fiorit választani." />
+<meta name="keywords" content="fiori, fiori_vs_abap, manager_perspective">
+
+<link rel="alternate" href="/when_to_choose_fiori-hu.html" hreflang="hu" />
+<link rel="alternate" href="/when_to_choose_fiori.html" hreflang="en" />
+
+  <meta property="og:site_name" content="szebenyib"/>
+  <meta property="og:title" content="Mikor válasszunk Fiorit ABAP helyett?"/>
+  <meta property="og:description" content="A Fiori nem fogja megoldani az összes problémát. És igen, jó eséllyel többe fog kerülni mint egy ABAP riport. De mégis sok esetben megéri. Hogy mikor? Összeszedtem egy pár esetet, amikor megéri Fiorit választani."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/when_to_choose_fiori-hu.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2023-01-26 00:00:00+01:00"/>
+  <meta property="article:modified_time" content="2023-01-27 00:00:00+01:00"/>
+  <meta property="article:author" content="/author/balint-szebenyi.html">
+  <meta property="article:section" content="Fiori"/>
+  <meta property="article:tag" content="fiori"/>
+  <meta property="article:tag" content="fiori_vs_abap"/>
+  <meta property="article:tag" content="manager_perspective"/>
+  <meta property="og:image" content="static/images/profile.jpg">
+
+  <title>szebenyib &ndash; Mikor válasszunk Fiorit ABAP helyett?</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="static/images/profile.jpg" alt="Balint's blog" title="Balint's blog">
+    </a>
+
+    <h1>
+      <a href="/">Balint's blog</a>
+    </h1>
+
+    <p>Embedded Analytics, Fiori, ABAP</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/category/fiori.html" >Fiori</a>
+          </li>
+          <li>
+            <a target="_self" href="/tag/manager_perspective" >Manager perspective</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-rss"
+           href="feeds/all.atom.xml"
+           target="_blank">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/balint-szebenyi/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/szebenyib"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+          <div class="translations">
+    <a class="active" href="/when_to_choose_fiori-hu.html">hu</a>
+        <a href="/when_to_choose_fiori.html">en</a>
+    </div>
+
+    <h1 id="when_to_choose_fiori">Mikor válasszunk Fiorit ABAP helyett?</h1>
+    <p>
+      Posted on 2023-01-26 in <a href="/category/fiori.html">Fiori</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org64f27a0">1. Bevezető</a></li>
+<li><a href="#orgcd96adf">2. Felhasználási esetek</a>
+<ul>
+<li><a href="#org9054db9">2.1. Elérés mobilon</a></li>
+<li><a href="#org51f6e04">2.2. Folyamat a középpontban</a></li>
+<li><a href="#org0c28acf">2.3. Az idő pénz</a></li>
+<li><a href="#orgba45f61">2.4. Ha nincs SAPGUI</a></li>
+<li><a href="#org56344b2">2.5. Amikor a Fiori fejlesztése egyszerűbb, mint egy ALV-é</a></li>
+<li><a href="#org30cfba7">2.6. Alkalmazkodás a többi alkalmazáshoz</a></li>
+<li><a href="#org70d1eb7">2.7. Amikor egy funkcionalitás nem elérhető SAPGUI-ban, de Fiorival megvalósítható</a></li>
+<li><a href="#orgd8c9929">2.8. Nem-SAP integráció</a></li>
+</ul>
+</li>
+<li><a href="#orga57cd13">3. Checklist a döntéshez</a></li>
+</ul>
+</div>
+</div>
+<p>
+The article was originally published on <a href="https://onespire.net/news/s4-comes-with-fiori/">Onespire.net</a>
+</p>
+
+<div id="outline-container-org64f27a0" class="outline-2">
+<h2 id="org64f27a0"><span class="section-number-2">1.</span> Bevezető</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sok ügyfél kerül döntési helyzetbe: ABAP riport készüljön vagy Fiori megoldás?
+A Fiori drágább. Több funkcionalitás és több csilli-villi elkészítéséhez több
+fejlesztői ráfordításra van szükség. Emiatt nem érdemes mindig Fiorit
+választani, csak azért mert ez az épp felkapott irányvonal. De számos olyan
+helyzet akad, amikor megéri a többletráfordítást valamit Fiori segítségével
+megvalósítani. Ebben a cikkben ilyen eseteket gyűjtöttem össze.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd96adf" class="outline-2">
+<h2 id="orgcd96adf"><span class="section-number-2">2.</span> Felhasználási esetek</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org9054db9" class="outline-3">
+<h3 id="org9054db9"><span class="section-number-3">2.1.</span> Elérés mobilon</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Sok IT szervezet biztosítja már a vállalati folyamatok elérését telefonon.
+</p>
+
+<p>
+Képzeljük el, hogy mi vagyunk a felelősek a beszerzési megrendelések (PO-k)
+elfogadásáért egy költséghelyen. Ha el kéne fogadni egy PO-t, akkor az jó
+eséllyel egy workitem formájában érne el minke a SAP Business Workplacen
+(SBWP) keresztül.
+</p>
+
+<p>
+Tegyük fel, hogy otthon vagyunk egy fárasztó nap után, de valakinek,
+valamiért épp azonnal szükséges egy jóváhagyás. (Mindez csak a képzelet
+szüleménye, a valóságban ilyesmi elképzelhetetlen.)
+</p>
+
+<p>
+Tehát, lemegyünk a kocsiban felejtett laptopért. Megkeressük a töltőt,
+bedugjuk a konnektorba és bekapcsoljuk. És várunk. Várunk arra, hogy
+elinduljon. Várunk arra, hogy befejezze a Windows Updatet. Várunk arra, hogy
+létrejöjjön a VPN kapcsolat, miután mindenféle kétfaktoros autentikáción
+túlestünk. Majd elindítjuk a SAPGUI-t (vagy megvárjuk, hogy elinduljon az
+Outlook és onnan keressük ki a linket, ami az SBWP-t indítja).
+Bejelentkezünk. Elindítjuk a tranzakciót, megkeressük a workitemet és
+esetleg még más tranzakciókban is keresgélünk, hogy leellenőrizzük, minden
+rendben van-e. Végül jóváhagyjuk a megrendelést.
+</p>
+
+<p>
+És akkor lépjünk be egy másik világba, ahol már van Fiori. Elővesszük a
+telefonunkat, ami mindig nálunk van. Kinyitjuk a vállalati böngészőt, amely
+szükség szerint a háttérben felépíti a VPN kapcsolatot, majd bejelentkezünk
+a Fiori Launchpadra. A My Inbox csempe egyből előttünk van, a legújabb
+workitemmel és minden releváns információvala döntéshozatalhoz. Végül
+jóváhagyjuk a megrendelést.
+</p>
+
+<p>
+Melyik a kellemesebb a fentiek közül?
+</p>
+
+<p>
+Persze, a második szcenárió nem fog magától kulcsrakészen érkezni hozzánk a
+SAP-tól. Az IT infrastruktúra mellett biztosítani kell, hogy a workflow
+támogassa a My Inbox-ot, hogy megjelenjenek a döntéshez szükséges releváns
+információk és a döntés végre is hajtódjon. De ezt a fejlesztést csak
+egyszer kell megcsinálni és minden vezető hálás egy ilyen kényelmes
+megoldásért.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51f6e04" class="outline-3">
+<h3 id="org51f6e04"><span class="section-number-3">2.2.</span> Folyamat a középpontban</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Mindannyian dolgoztunk már úgy tranzakciókkal, hogy a bennük rejlő
+funkcionalitásnak csak egy része volt releváns, viszont ez a sokoldalúság
+sokkal bonyolultabbá tette a munkavégzést.
+</p>
+
+<p>
+Sokszor egyszerűbb programozási szempontból csoportosítani tevékenységeket,
+amelyek szerteágazó beállítási lehetőségekkel rendelkeznek. Ezek
+természetesen mind más-más mezőkön alapulnak, de így végső soron mind jelen
+vannak. És ha mindez nem lenne elég, a legkülönbözőbb füleken hol
+megjelenve, hol eltűnve. Ne bújkálj MIGO, mindenki tudja, hogy rólad van
+szó.
+</p>
+
+<p>
+Ám ha a fejlesztési szempontok helyett a végfelhasználó kerül az első helyre
+és a folyamat, akkor ez a felesleges komplexitás elkerülhető. Márpedig ha
+kevesebb a komplexitás, akkor a jobb áttekinthetőség kevesebb a
+hibalehetőséget hoz és így gyorsabb munkavégzést és nagyobb hatékonyságot
+tesz lehetővé.
+</p>
+
+<p>
+Ha sok felhasználó napi munkavégzését tudjuk így egyszerűsíteni, akkor a
+hatékonyságnövelés könnyen lefordítható anyagi előnyre.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c28acf" class="outline-3">
+<h3 id="org0c28acf"><span class="section-number-3">2.3.</span> Az idő pénz</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Ez a szempont kéz a kézben jár a mobil eléréssel, de több annál.
+</p>
+
+<p>
+Mi van akkor, ha egy szolgáltatónak fizetnünk kell, amíg a kamionja nálunk
+várakozik lerakodásra a raktárban? Ez egy azonnal érezhető anyagi teher, ami
+rávilágít arra, hogy a lerakodási folyamatnak bolondbizotsnak és a lehető
+leggyorsabbnak kell lennie.
+</p>
+
+<p>
+Ha mindez papír alapon történik, akkor kétszer kell mindent rögzíteni.
+Egyszer a helyszínen, amikor a lerakodás történik, majd bepötyögni mindent
+még egyszer a rendszerbe az irodában. Ez hibalehetőségeket rejt magában és
+felesleges dupla munka.
+</p>
+
+<p>
+Ha viszont van kéznél egy telefon vagy tablet, hogy megtámogassa ezt a
+folyamatot, akkor ott a helyszínen lehetne rögzíteni az eseményeket valós
+időben. A tételeket sorba lehetne rendezni fontosság alapján. Részleteket
+lehetne leellenőrizni ott helyben. Az elemeket ledolgozása a listában
+folyamatosan visszatükröződne. Le lehetne olvasni vonalkodót. Lehetne
+keresni a tételek között. És nem kellene mindent kétszer rögzíteni.
+</p>
+
+<p>
+Ez ismét egy olyan eset, ahol a Fiori fejlesztés költségeit bőven
+ellensúlyozzák az elért -materializálható- előnyök.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba45f61" class="outline-3">
+<h3 id="orgba45f61"><span class="section-number-3">2.4.</span> Ha nincs SAPGUI</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Nincs minden ügyfélnél SAPGUI, vagy legalábbis a leányvállalatokra ez már
+nem feltétlenül igaz. Mégis, előfordul, hogy szükségük van SAP elérésre és
+nem csak riporting céllal.
+</p>
+
+<p>
+A Fiori itt is segíthet.
+</p>
+
+<p>
+Hogy? A tervezéstől a megvalósításig mindenhol. Az ilyen leányvállalatok nem
+ismerik a SAP terminológiát, nincs tapasztalatuk a SAPGUI-val, de mégis
+szükséges, hogy megismerjék, milyen megoldás fogja kielégíteni az igényüket.
+Ezt nagyon könnyű megvalósítani Fiori képernyőtervekkel. Ezt úgy kell
+elképzelni, mint egy Burda Magazinból összeollózott word fájlt, amelyet az
+ügyfél változáskövetéssel véleményezhet. A dokumentum tartalmazza a
+képernyőfelépítést, beleértve valamennyi mezőt, jelölve azok forrását,
+továbbá minden funkcionalitást, amely a végfelhasználó számára majd
+rendelkezésre áll.
+</p>
+
+<p>
+A végfelhasználónak, aki a dokumentumot véleményezi, nem kell ismernie a
+SAP-ot vagy a Fiori-t. Pont ez a lényeg, mert ha a felhasználói felület nem
+magától értetődő, akkor rossz. A megoldásnak intuitívnak kell lennie és a
+Fiori SAPUI5 legókockáival ez tökéletesen megvalósítható.
+</p>
+
+<p>
+Az egyeztetéseket követően előáll a végleges képernyőterv, megfogalmazva az
+ügyfél számára azt, hogy mit fog kapni, a fejlesztő számára pedig azt, hogy
+mit kell elkészítenie. Mivel ez a felfedezés fázis, amely az igény
+megfogalmazására szolgál, könnyen elválasztható a megvalósítástól, így ez
+anyagilag is enged egy megbontást, illetve szükség szerint elválhat
+egymástól a felmérést végző és a kivitelező.
+</p>
+
+<p>
+A nincs SAPGUI kitétel esetén a Fiori előnye magától értetődő. Nem kell
+teríteni, patchelni és managelni a SAPGUI-t, mert csak egy böngészőre van
+szükség.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56344b2" class="outline-3">
+<h3 id="org56344b2"><span class="section-number-3">2.5.</span> Amikor a Fiori fejlesztése egyszerűbb, mint egy ALV-é</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Van olyan eset, amikor a hihetetlen megtörténik - a Fioris megoldás olcsóbb,
+mint egy ABAP riport fejlesztése.
+</p>
+
+<p>
+Ez akkor fordul elő, ha a RESTful ABAP Programming Model-t használjuk
+(<a href="https://community.sap.com/topics/abap/rap">RAP</a>). Ez a technológia a
+Fiorit részesíti előnyben és gyorsabb Fiori elérést tesz lehetővé, mint
+ABAP-ot. Mivel rengeteg üzleti információ kerül az alkalmazás alsó rétegeibe
+beépítésre az újrafelhasználhatóság miatt, így annak az újraimplementációja
+ALV-n egy Fiori Elements alkalmazással szemben nagyobb ráfordítással jár.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org30cfba7" class="outline-3">
+<h3 id="org30cfba7"><span class="section-number-3">2.6.</span> Alkalmazkodás a többi alkalmazáshoz</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Ha egy üzleti egység már Fiori alkalmazásokat használ, akkor számukra egy nem-Fiori megoldás visszalépés. Visszalépés funkcionalitásban, koherenciában és mindent egybevéve felhasználói elégedettség tekintetében.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org70d1eb7" class="outline-3">
+<h3 id="org70d1eb7"><span class="section-number-3">2.7.</span> Amikor egy funkcionalitás nem elérhető SAPGUI-ban, de Fiorival megvalósítható</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Ha valaki még sosem nézte meg mit lehet megvalósítani SAP Fioriban, akkor mindenképp érdemes ezt pótolni. Olyan lehetőségeket fedezhetünk így fel, amelyekről sosem gondoltuk volna, hogy lehetséges és hasznos lenne.
+</p>
+
+<p>
+A következő forrásokra érdemes szánni egy pár órát:
+</p>
+<ul class="org-ul">
+<li><a href="https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/">Fiori apps reference library</a></li>
+<li><a href="https://ui5.sap.com/controls">UI5 toolkit</a></li>
+<li><a href="https://experience.sap.com/fiori-design-web/explore/">Fiori Design Guidelines</a></li>
+</ul>
+
+<p>
+Csak úgy ízelítőnek:
+</p>
+<ul class="org-ul">
+<li>Térképek?</li>
+<li>3D-s objektumok megtekintése?</li>
+<li>Olyan diagramok, amelyeket csak Dashboardokon láttunk?</li>
+<li>Több diagram egy oldalon?</li>
+<li>Táblázatos ÉS diagramos adatmegjelenítés egyszerre?</li>
+<li>Varázslóval végigvezetett folyamatok?</li>
+<li>Hálózat diagramok?</li>
+<li>Főkönyvi számlák T megjelenítéssel?</li>
+</ul>
+
+<p>
+A SAPUI5 eszközkészlet mindenben támogat.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd8c9929" class="outline-3">
+<h3 id="orgd8c9929"><span class="section-number-3">2.8.</span> Nem-SAP integráció</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+A Fiori mögött lévő SAPUI5 eszközkészlet nem csak SAP rendszerekhez használható. Ha a rendelkezésre álló adatforrás OData kompatibilis, akkor máris lehet rá Fiori frontendet ültetni. Vagy menjünk még tovább: nem SAP ügyfél és nincsen hozzáférése a SAPUI5 eszközkészlethez. Ekkor is használhatja ennek az ingyenes, openUI5 változatát, ingyen (a Fiori Elements kivételével).
+</p>
+
+<p>
+Így tehát nem-SAP backendre és készíthető Fiori alkalmazás. És mint ilyen, integrálható a rendszerkörnyezetbe, a többi Fiori alkalmazás mellé. ÚGy vélem ez tényleg egy olyan lehetőség, amely rávilágít arra, hogy Fiorival mennyi minden elérhető.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga57cd13" class="outline-2">
+<h2 id="orga57cd13"><span class="section-number-2">3.</span> Checklist a döntéshez</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>Szükséges telefonos/tabletes elérést?</li>
+<li>Fel tudja gyorsítani a Fiori a végfelhasználók munkavégzését?</li>
+<li>Fel tudja gyorsítani a Fiori az üzleti folyamatot?</li>
+<li>Nem elérhető a SAPGUI?</li>
+<li>A RAP jó választás az üzleti problémára?</li>
+<li>A végfelhasználók már egyébként is Fiorit használnak?</li>
+<li>Valamilyen különleges UI funkcionalitásra van szükség?</li>
+<li>Más, third-party, de OData képes rendszert kell integrálni?</li>
+</ul>
+
+<p>
+Ha a válasz igen, akkor a Fiori logikus választás.
+</p>
+</div>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/fiori.html">fiori</a>
+      <a href="/tag/fiori_vs_abap.html">fiori_vs_abap</a>
+      <a href="/tag/manager_perspective.html">manager_perspective</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " szebenyib ",
+  "url" : "",
+  "image": "static/images/profile.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>
