@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="szebenyib Atom">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YH3M9YZNTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YH3M9YZNTT');
+</script>
+
+ 
+
+<meta name="author" content="Balint Szebenyi" />
+<meta name="description" content="There are many analytics solutions that SAP has to offer. Embedded Analytics, Enterprise Analytics, Embedded BW, Data Warehouse Cloud, Datasphere - many new terms to get acquainted with. I have held a presentation about this topic at the conference &#39;RISE with SAP&#39; conference. I summarise SAP&#39;s concept briefly in this article so that all these products and terms can make sense to decision makers." />
+<meta name="keywords" content="embedded_analytics, sap_bw, sap_datasphere">
+
+
+  <meta property="og:site_name" content="szebenyib"/>
+  <meta property="og:title" content="Embedded analytics (EA) vs. SAP BW vs. SAP Datasphere"/>
+  <meta property="og:description" content="There are many analytics solutions that SAP has to offer. Embedded Analytics, Enterprise Analytics, Embedded BW, Data Warehouse Cloud, Datasphere - many new terms to get acquainted with. I have held a presentation about this topic at the conference &#39;RISE with SAP&#39; conference. I summarise SAP&#39;s concept briefly in this article so that all these products and terms can make sense to decision makers."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/embedded_analytics_vs_sap_bw_vs_sap_datasphere.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2023-03-28 00:00:00+02:00"/>
+  <meta property="article:modified_time" content="2023-04-01 00:00:00+02:00"/>
+  <meta property="article:author" content="/author/balint-szebenyi.html">
+  <meta property="article:section" content="Embedded Analytics"/>
+  <meta property="article:tag" content="embedded_analytics"/>
+  <meta property="article:tag" content="sap_bw"/>
+  <meta property="article:tag" content="sap_datasphere"/>
+  <meta property="og:image" content="pages/static/images/profile.jpg">
+
+  <title>szebenyib &ndash; Embedded analytics (EA) vs. SAP BW vs. SAP Datasphere</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="pages/static/images/profile.jpg" alt="Balint's blog" title="Balint's blog">
+    </a>
+
+    <h1>
+      <a href="/">Balint's blog</a>
+    </h1>
+
+    <p>Embedded Analytics, Fiori, ABAP</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/category/embedded-analytics.html" >Embedded Analytics</a>
+          </li>
+          <li>
+            <a target="_self" href="/category/fiori.html" >Fiori</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-rss"
+           href="feeds/all.atom.xml"
+           target="_blank">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/balint-szebenyi/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/szebenyib"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="embedded_analytics_vs_sap_bw_vs_sap_datasphere">Embedded analytics (EA) vs. SAP BW vs. SAP Datasphere</h1>
+    <p>
+      Posted on 2023-03-28 in <a href="/category/embedded-analytics.html">Embedded Analytics</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc31bfcf">1. Introduction</a></li>
+<li><a href="#orgdf63d9c">2. Embedded Analytics vs Enterprise Analytics</a></li>
+<li><a href="#orge3d9040">3. Enterprise Analytics - not to be discarded</a></li>
+<li><a href="#org51547d6">4. Embedded Analytics</a>
+<ul>
+<li><a href="#org3929c10">4.1. Sidenote: Embedded BW</a></li>
+<li><a href="#org0718125">4.2. Value proposition</a></li>
+</ul>
+</li>
+<li><a href="#org7cefc71">5. Enterprise Analytics in the cloud: SAP Datasphere</a>
+<ul>
+<li><a href="#org65a7a55">5.1. Value proposition</a></li>
+<li><a href="#orgd4f3372">5.2. How to RISE into the cloud</a></li>
+<li><a href="#org2c2d8f9">5.3. BW Bridge</a></li>
+</ul>
+</li>
+<li><a href="#org1345e9d">6. Conclusion</a></li>
+</ul>
+</div>
+</div>
+<p>
+The presentation was held at the RISE with SAP conference, New York Palace,
+Budapest, 2023-03-28.
+</p>
+
+<p>
+The presentation slides are available
+<a href="./pages/static/pdf/2023_ea_bw_dwc.pdf">here</a> (only in Hungarian).
+</p>
+
+<div id="outline-container-orgc31bfcf" class="outline-2">
+<h2 id="orgc31bfcf"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+SAP does not make it easy for their customers (and partners alike) to follow
+	their solution portfolio as product names often change. Even similarly named
+	products may turn out to have extensively different capabilities.
+</p>
+
+<p>
+My aim with the presentation was to shed light on the differences and try to
+differentiate among the products by their purpose and capabilities. The topic
+focuses on the backend side, so tools used primarily for visualization like
+SAP Analtics Cloud (SAC), Microsoft PowerBI, Tableau are not discussed here.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf63d9c" class="outline-2">
+<h2 id="orgdf63d9c"><span class="section-number-2">2.</span> Embedded Analytics vs Enterprise Analytics</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Embedded Analytics corresponds to SAP Business Warehouse in today's world
+for most clients. This is the trusted, reliable system that ECC users
+install on prem and manage as their data warehouse.
+</p>
+
+<p>
+Enterprise Analytics is the umbrella term that is used to characterize the
+analytical capabilities of SAP S/4HANA. It entails KPIs, multidimensional
+reports, ALV with Integrated Data Access (IDA), overview pages, analytical
+reports, and anything that can be brought alive by relying on the real-time
+nature of the underlying SAP HANA database.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge3d9040" class="outline-2">
+<h2 id="orge3d9040"><span class="section-number-2">3.</span> Enterprise Analytics - not to be discarded</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+One may think that if SAP S/4HANA solves runtime problems by providing
+real time data then SAP BW is no longer needed.
+</p>
+
+<p>
+Nothing could stand further from reality. To make a simple and clear
+distinction imagine having years' and years' of data all piling up in an SAP
+S/4HANA system taking up precious memory, without archiving. Not that
+realistic, is it?
+</p>
+
+<p>
+Keeping the corporate memory and the single source of truth in a separately
+managed system alleviates the load on the production supporting ECC system,
+while retaining it for long term historical reports. Not to mention all
+the connections that are needed for source systems for data transfers into
+the corporate data warehouse, which noone wants to see in their
+production system.
+</p>
+
+<p>
+There other 'minor' issues like: planning, data governance, data lifecycle
+management, self-service BI, Excel integration that are not solved in an
+S/4HANA system - because they do not belong there.
+</p>
+
+
+<div id="org0e0a8d4" class="figure">
+<p><img src="./pages/static/images/ea/embedded_analytics_why_it_is_needed.png" alt="embedded_analytics_why_it_is_needed.png" />
+</p>
+</div>
+
+<p>
+As a final hit in the illusion of using SAP S/4HANA instead of a
+data warehouse the installation of BI Content in such a system is not
+supported - <a href="https://launchpad.support.sap.com/#/notes/2289424">2289424</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51547d6" class="outline-2">
+<h2 id="org51547d6"><span class="section-number-2">4.</span> Embedded Analytics</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org3929c10" class="outline-3">
+<h3 id="org3929c10"><span class="section-number-3">4.1.</span> Sidenote: Embedded BW</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+An encountered term is Embedded BW when it comes to SAP S/4HANA. What is it?
+It is a BW on HANA 7.5 with full functionality included with SAP S/4HANA.
+</p>
+
+<p>
+But it is not there to fulfill the purposes of a full blown data warehouse,
+it is just a sidecar that exists to support designated SAP S/4HANA
+processes.
+</p>
+
+<p>
+BI Content is not supported, BPC functionality requires separate licence.
+</p>
+
+<p>
+As such it is not something to be used for data warehousing.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0718125" class="outline-3">
+<h3 id="org0718125"><span class="section-number-3">4.2.</span> Value proposition</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+The core value of EA is bringing real-time, operational reporting to life
+without data replication allowing a blazing fast insight-to-action approach.
+</p>
+
+
+<div id="org91aec66" class="figure">
+<p><img src="./pages/static/images/ea/ea_value_proposition.png" alt="ea_value_proposition.png" />
+</p>
+</div>
+
+<p>
+As for backend technology this means Core Data Services (CDS) views. CDS
+views should be imagined as stacked SELECT statements on each other. If this
+is designed carefully this can bring some really nice and reusable data
+models with itself - which can be reused by SAP BW/4HANA as well to
+integrate with other models. So developments in EA are not in vain even
+if it turns out to be needed on the BW side as well.
+</p>
+
+<p>
+As for output technology the most likely choice is Fiori.
+</p>
+
+<p>
+Standard Fiori applications often rely on CDS views even without the end
+users or consultants noticing. Fiori Overview Pages providing 360° views of
+a business subject are a prominent example of SAP S/4HANA capabilities.
+</p>
+
+<p>
+Tiles with KPIs populate all users' Fiori Launchpad serving not only
+as a single point of entry into SAP S/4HANA but also as a mini dashboard.
+</p>
+
+<p>
+Business Explorer (BEx) like reports can be achieved in the form of
+multidimensional reports supporting capabilities of the very same
+OLAP engine that is found in SAP BW.
+</p>
+
+
+<div id="org0635dda" class="figure">
+<p><img src="./pages/static/images/ea/ea_multidimensional_report.png" alt="ea_multidimensional_report.png" />
+</p>
+</div>
+
+<p>
+SAP GUI users can leverage ALV on IDA, where not the full dataset is
+transferred to the application server for display, but only just
+the relevant proportion of it that fits on the screen, making data display
+even faster.
+</p>
+
+<p>
+All the above are available for custom developments as well, with SAP
+supporting data model building even via power user tools. As per my personal
+opinion power user tools do not solve modeling and backlog refinement
+difficulties but pose as burdens with their limitations compared to modeling
+with Eclipse.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7cefc71" class="outline-2">
+<h2 id="org7cefc71"><span class="section-number-2">5.</span> Enterprise Analytics in the cloud: SAP Datasphere</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org65a7a55" class="outline-3">
+<h3 id="org65a7a55"><span class="section-number-3">5.1.</span> Value proposition</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Data Warehouse Cloud. That is the previous name of the product. There is no
+more concise way to summarise what it is than that name. This is SAP's
+public cloud data warehouse solution, which is the strategically highlighted
+solution by SAP when it comes to data warehousing.
+</p>
+
+<p>
+The question arises why one should consider using this if BW/4HANA is
+a trusted solution that is supported till 2040. The answer lies in the
+capabilities. A cloud product can meet requirements that an on prem
+data warehouse cannot. It allows connecting to more datasources and serving
+more data consumers than an on prem solution - and also easier. If cloud
+native SAP products are used then a connection between cloud products
+is easier to establish than connecting the on prem world to the cloud.
+</p>
+
+<p>
+Semantic modeling serves as a concept to bring self-service BI closer
+to the end users and closer to become a reality. If data architects are
+tasked to only take care of the technical aspects (data layer - like
+modeling up to a composite provider) but from then on the technical world is
+abstracted away by mapping to business terms (business layer) then that will
+make the end users feel at home with the data provided to them.
+</p>
+
+<p>
+Open analytical tools like Python (pandas, sqlalchemy, etc.) and SQL (HANA
+SQL and HANA SQLScript) are welcome citizens when it comes to modeling and
+data analysis. It is a nice addition to the toolset as it allows more people
+to gain information from data as opposed to the closed ecosystem of ABAP.
+</p>
+
+<p>
+Spaces as a term can be recognised as what was former known as info areas.
+In my experience info areas are not widely used by customers for
+authorization restrictions, clients like to narrow down authorization to
+a query level. However in the cloud spaces are much more important as
+they allow admins to restrict resource consumption by spaces. They also
+serve a playground for restricting as to what is made available to an end
+user when it comes to self-service BI.
+</p>
+
+<p>
+SAP Datasphere also enables accessing third-party data via a built in data
+market. This means that 3rd party data (be it weather, stock data, FX rates,
+commodity prices, etc.) will be made available via a subscription without
+further interfaces. What is more the clients can choose to provide such data
+themselves for others.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd4f3372" class="outline-3">
+<h3 id="orgd4f3372"><span class="section-number-3">5.2.</span> How to RISE into the cloud</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<div id="orgeee0e90" class="figure">
+<p><img src="./pages/static/images/ea/sap_datasphere_transition_options.png" alt="sap_datasphere_transition_options.png" />
+</p>
+</div>
+
+<p>
+The advantage of using a cloud solution is that a demo is not more further
+than a few clicks. No hardware procurement, no demo licence agreement
+negotiation, no SAP BASIS installation. With just a registration and the
+press of a button one may start experimenting with SAP Datasphere in a few
+minutes.
+</p>
+
+<p>
+If the first feedback is positive one may experiment with a pilot project in
+SAP Datasphere. Then one will have first hand experience about productive
+use, pricing, connection establishments, modeling, administration - while
+not risking more than the given project, while all existing BW models
+functioning untouched.
+</p>
+
+<p>
+Or one may take the hybrid approach and first move a selected BW model
+into the cloud via a migration tool that is capable of moving just the
+model (shell conversion) or the model and the data as well (remote
+conversion). This migration is detailed in a comprehensive playbook.
+</p>
+
+<p>
+So a SAP BW and Datasphere may coexist as long as desired and models
+may be transferred at the clients' own pace.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c2d8f9" class="outline-3">
+<h3 id="org2c2d8f9"><span class="section-number-3">5.3.</span> BW Bridge</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+So how will the BW world meet Datasphere? By using SAP Datasphere's
+BW Bridge. It is a feature of Datasphere that allows bringing
+BW models into a separate, dedicated space in SAP Datasphere. It won't
+cover everything, as Web Templates, consolidation and planning features
+are not supported - those are to be covered by SAP Analtics Cloud.
+But it will support transformations, data strore objects along with custom
+ABAP coding. What is more this is not just for migration, it is also
+available for modeling there on BW terms, if desired.
+</p>
+
+
+<div id="org6da3195" class="figure">
+<p><img src="./pages/static/images/ea/sap_datasphere_bw_bridge.png" alt="sap_datasphere_bw_bridge.png" />
+</p>
+</div>
+
+<p>
+But how will the end result of the BW Bridge space made available for
+SAP Datasphere? This is quite simple, by selecting the tables
+behind the models' end results for projection and sharing with other
+spaces. So one may select whichever table of an aDSO or infoobject
+is desired and it can be used for further modeling via Datasphere.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1345e9d" class="outline-2">
+<h2 id="org1345e9d"><span class="section-number-2">6.</span> Conclusion</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+SAP provides its customers with a wide toolset when it comes to leveraging
+data. If one uses an SAP S/4HANA system then the first solution
+to check is the toolbox of Embedded Analytics. If reports are needed as
+a daily driver that is based on data available in the system, then
+this is the go to solution.
+</p>
+
+<p>
+If data is to be retained longer, if resource separation is desired,
+if end users of ECC and analytics data form disjoint sets, if
+there are multiple data sources, then one should choose a data warehouse
+solution.
+</p>
+
+<p>
+Whether on prem BW4/HANA or BW4/HANA private cloud edition, or
+SAP Datasphere is the way to go, depends on the individual requirements.
+As a rule of thumb BW4/HANA supports the older world better (addons),
+and due to its maturity might be a better choice for the time being. But
+for consuming and providing cloud data sources, future proofing, SAP
+Datasphere is the strategic solution. Since the two worlds can coexist together,
+one can enjoy the benefits of both without sacrificing advantages of the other.
+</p>
+</div>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/embedded_analytics.html">embedded_analytics</a>
+      <a href="/tag/sap_bw.html">sap_bw</a>
+      <a href="/tag/sap_datasphere.html">sap_datasphere</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " szebenyib ",
+  "url" : "",
+  "image": "pages/static/images/profile.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>

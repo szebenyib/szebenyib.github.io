@@ -40,28 +40,26 @@
  
 
 <meta name="author" content="Balint Szebenyi" />
-<meta name="description" content="Fiori is not the magical solution for all your problems. Yes, it might be more expensive than a classic SE38 ABAP report. But it might be well worth choosing it. When? I have collected a handful of cases when you should consider using Fiori as the frontend solution." />
-<meta name="keywords" content="fiori, fiori_vs_abap, manager_perspective">
+<meta name="description" content="There are many analytics solutions that SAP has to offer with the emergence of EA, and terms like embedded BW, Data Warehouse Cloud, Datasphere have also appeared. I have held a presentation about this topic at the conference titled RISE with SAP. I summarise SAP&#39;s concept briefly in this article so that all these products and terms can make sense to decision makers." />
+<meta name="keywords" content="embedded_analytics, sap_bw, sap_datasphere">
 
-<link rel="alternate" href="/drafts/when_to_choose_fiori.html" hreflang="en" />
-<link rel="alternate" href="/drafts/when_to_choose_fiori-hu.html" hreflang="hu" />
 
   <meta property="og:site_name" content="szebenyib"/>
-  <meta property="og:title" content="When to choose Fiori as the frontend instead of ABAP?"/>
-  <meta property="og:description" content="Fiori is not the magical solution for all your problems. Yes, it might be more expensive than a classic SE38 ABAP report. But it might be well worth choosing it. When? I have collected a handful of cases when you should consider using Fiori as the frontend solution."/>
+  <meta property="og:title" content="Embedded analytics (EA) vs. SAP BW vs. SAP Datasphere"/>
+  <meta property="og:description" content="There are many analytics solutions that SAP has to offer with the emergence of EA, and terms like embedded BW, Data Warehouse Cloud, Datasphere have also appeared. I have held a presentation about this topic at the conference titled RISE with SAP. I summarise SAP&#39;s concept briefly in this article so that all these products and terms can make sense to decision makers."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="/drafts/when_to_choose_fiori.html"/>
+  <meta property="og:url" content="/drafts/embedded_analytics_vs_sap_bw_vs_sap_datasphere.html"/>
   <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2023-01-26 00:00:00+01:00"/>
-  <meta property="article:modified_time" content="2023-01-27 00:00:00+01:00"/>
+  <meta property="article:published_time" content="2023-03-28 00:00:00+02:00"/>
+  <meta property="article:modified_time" content="2023-03-25 00:00:00+01:00"/>
   <meta property="article:author" content="/author/balint-szebenyi.html">
   <meta property="article:section" content="Fiori"/>
-  <meta property="article:tag" content="fiori"/>
-  <meta property="article:tag" content="fiori_vs_abap"/>
-  <meta property="article:tag" content="manager_perspective"/>
-  <meta property="og:image" content="pages/static/images/profile.jpg">
+  <meta property="article:tag" content="embedded_analytics"/>
+  <meta property="article:tag" content="sap_bw"/>
+  <meta property="article:tag" content="sap_datasphere"/>
+  <meta property="og:image" content="static/images/profile.jpg">
 
-  <title>szebenyib &ndash; When to choose Fiori as the frontend instead of ABAP?</title>
+  <title>szebenyib &ndash; Embedded analytics (EA) vs. SAP BW vs. SAP Datasphere</title>
 
 
 </head>
@@ -70,7 +68,7 @@
 <aside>
   <div>
     <a href="/">
-      <img src="pages/static/images/profile.jpg" alt="Balint's blog" title="Balint's blog">
+      <img src="static/images/profile.jpg" alt="Balint's blog" title="Balint's blog">
     </a>
 
     <h1>
@@ -92,10 +90,10 @@
             </li>
 
           <li>
-            <a target="_self" href="/category/embedded-analytics.html" >Embedded Analytics</a>
+            <a target="_self" href="/category/fiori.html" >Fiori</a>
           </li>
           <li>
-            <a target="_self" href="/category/fiori.html" >Fiori</a>
+            <a target="_self" href="/tag/manager_perspective" >Manager perspective</a>
           </li>
       </ul>
     </nav>
@@ -131,14 +129,10 @@
 
 <article class="single">
   <header>
-          <div class="translations">
-    <a class="active" href="/drafts/when_to_choose_fiori.html">en</a>
-        <a href="/drafts/when_to_choose_fiori-hu.html">hu</a>
-    </div>
-
-    <h1 id="when_to_choose_fiori">When to choose Fiori as the frontend instead of ABAP?</h1>
+      
+    <h1 id="embedded_analytics_vs_sap_bw_vs_sap_datasphere">Embedded analytics (EA) vs. SAP BW vs. SAP Datasphere</h1>
     <p>
-      Posted on 2023-01-26 in <a href="/category/fiori.html">Fiori</a>
+      Posted on 2023-03-28 in <a href="/category/fiori.html">Fiori</a>
 
     </p>
   </header>
@@ -149,48 +143,109 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7049626">1. Introduction</a></li>
-<li><a href="#org0028d1b">2. Use cases</a>
+<li><a href="#org2a9b3a1">1. Introduction</a></li>
+<li><a href="#org73e65f9">2. Embedded Analytics vs Enterprise Analytics</a></li>
+<li><a href="#org54e346e">3. Enterprise Analytics is not to be discarded</a></li>
+<li><a href="#org2a7c78c">4. Use cases</a>
 <ul>
-<li><a href="#org53ed910">2.1. Mobile access</a></li>
-<li><a href="#orgdee9682">2.2. Focus on the process</a></li>
-<li><a href="#orgf3f6f5e">2.3. Time is money</a></li>
-<li><a href="#org986aa38">2.4. No SAPGUI access</a></li>
-<li><a href="#org86f31f0">2.5. Technology makes Fiori easier</a></li>
-<li><a href="#orge54fef9">2.6. Alignment to other apps</a></li>
-<li><a href="#org4994d97">2.7. UI feature not available in SAPGUI</a></li>
-<li><a href="#org6f54018">2.8. Non-SAP backend</a></li>
+<li><a href="#orgb8e108b">4.1. Mobile access</a></li>
+<li><a href="#orgc3c179d">4.2. Focus on the process</a></li>
+<li><a href="#org0ed8683">4.3. Time is money</a></li>
+<li><a href="#orgd33491e">4.4. No SAPGUI access</a></li>
+<li><a href="#orgc5d3331">4.5. Technology makes Fiori easier</a></li>
+<li><a href="#org8979c1d">4.6. Alignment to other apps</a></li>
+<li><a href="#org8aa5540">4.7. UI feature not available in SAPGUI</a></li>
+<li><a href="#orgc614bae">4.8. Non-SAP backend</a></li>
 </ul>
 </li>
-<li><a href="#orgf2bda87">3. Checklist for decision</a></li>
+<li><a href="#orgd252724">5. Checklist for decision</a></li>
 </ul>
 </div>
 </div>
 <p>
-The article was originally published on <a href="https://onespire.net/news/s4-comes-with-fiori/">Onespire.net</a>
+The presentation was held at the RISE with SAP conference, New York Palace, Budapest, 2023-03-28.
 </p>
 
-<div id="outline-container-org7049626" class="outline-2">
-<h2 id="org7049626"><span class="section-number-2">1.</span> Introduction</h2>
+<div id="outline-container-org2a9b3a1" class="outline-2">
+<h2 id="org2a9b3a1"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Many times clients are faced with the question: shall we go with ABAP reports
-	or choose Fiori? Fiori is more expensive. More features, more bells and
-	whistles need time to get them right, which in turn results in a higher
-	number of mandays compared to an ABAP report. As such it is not always the go
-	to solution and rightfully so. But there are many cases when it is well worth
-	spending on Fiori and I have collected a handful of them.
+SAP does not make it easy for their customers (and partners alike) to follow
+	their solution portfolio as product names often change. Even similarly named
+	products may turn out to have extensively different capabilities.
+</p>
+
+<p>
+My aim with the presentation was to shed light on the differences and try to
+differentiate among the products by their purpose and capabilities. The topic
+focuses on the backend side, so tools used primarily for visualization like
+SAP Analtics Cloud (SAC), Microsoft PowerBI, Tableau are not discussed here.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0028d1b" class="outline-2">
-<h2 id="org0028d1b"><span class="section-number-2">2.</span> Use cases</h2>
+<div id="outline-container-org73e65f9" class="outline-2">
+<h2 id="org73e65f9"><span class="section-number-2">2.</span> Embedded Analytics vs Enterprise Analytics</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+Embedded Analytics corresponds to SAP Business Warehouse in today's world
+for most clients. This is the trusted, reliable system that ECC users
+install on prem and manage as their data warehouse.
+</p>
+
+<p>
+Enterprise Analytics is the umbrella term that is used to characterize the
+analytical capabilities of SAP S/4HANA. It entails KPIs, multidimensional
+reports, ALV with Integrated Data Access (IDA), overview pages, analytical
+reports, and anything that can be brought alive by relying on the real-time
+nature of the underlying SAP HANA database.
+</p>
 </div>
-<div id="outline-container-org53ed910" class="outline-3">
-<h3 id="org53ed910"><span class="section-number-3">2.1.</span> Mobile access</h3>
-<div class="outline-text-3" id="text-2-1">
+</div>
+
+<div id="outline-container-org54e346e" class="outline-2">
+<h2 id="org54e346e"><span class="section-number-2">3.</span> Enterprise Analytics is not to be discarded</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+One may think that if SAP S/4HANA solves runtime problems by providing
+real time data then a SAP BW is no longer needed.
+</p>
+
+<p>
+Nothing could stand further from reality. To make a simple and clear
+distinction imagine having years' and years' of data all piling up
+in an SAP S/4HANA system taking up precious memory. Not that realistic, is it?
+</p>
+
+<p>
+Keeping the corporate memory and the single source of truth in a separately
+managed system alleviates the load on the production supporting ECC system,
+while retaining it for long term historical reports. Not to mention all
+the connections that are needed for source systems for data transfers into
+the corporate data warehouse, which noone wants to see in their
+production system.
+</p>
+
+<p>
+There other 'minor' issues like: planning, data governance, data lifecycle
+management self-service BI, Excel integration that are not solved in an
+S/4HANA system - because they do not belong there.
+</p>
+
+<p>
+As a final hit in the illusion of using SAP S/4HANA instead of a
+datawarehouse the installation of BI Content in such a system is not
+supported - <a href="https://launchpad.support.sap.com/#/notes/2289424">2289424</a>.
+</p>
+</div>
+</div>
+<div id="outline-container-org2a7c78c" class="outline-2">
+<h2 id="org2a7c78c"><span class="section-number-2">4.</span> Use cases</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgb8e108b" class="outline-3">
+<h3 id="orgb8e108b"><span class="section-number-3">4.1.</span> Mobile access</h3>
+<div class="outline-text-3" id="text-4-1">
 <p>
 Many IT organizations have taken steps into the direction of making IT
 processes available on mobile phones.
@@ -239,9 +294,9 @@ be grateful for the comfort you provide them with.
 </div>
 </div>
 
-<div id="outline-container-orgdee9682" class="outline-3">
-<h3 id="orgdee9682"><span class="section-number-3">2.2.</span> Focus on the process</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-orgc3c179d" class="outline-3">
+<h3 id="orgc3c179d"><span class="section-number-3">4.2.</span> Focus on the process</h3>
+<div class="outline-text-3" id="text-4-2">
 <p>
 Have you ever worked with a transaction just to use only a
 	fraction of the functionality it provides but to combat all its complexity?
@@ -268,9 +323,9 @@ If many users rely on processes that can be simplified this way one can
 </div>
 </div>
 
-<div id="outline-container-orgf3f6f5e" class="outline-3">
-<h3 id="orgf3f6f5e"><span class="section-number-3">2.3.</span> Time is money</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org0ed8683" class="outline-3">
+<h3 id="org0ed8683"><span class="section-number-3">4.3.</span> Time is money</h3>
+<div class="outline-text-3" id="text-4-3">
 <p>
 This comes hand in hand with mobile access. But it is even more.
 </p>
@@ -304,9 +359,9 @@ This is again a use case that shows that Fiori development costs can be
 </div>
 </div>
 
-<div id="outline-container-org986aa38" class="outline-3">
-<h3 id="org986aa38"><span class="section-number-3">2.4.</span> No SAPGUI access</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-orgd33491e" class="outline-3">
+<h3 id="orgd33491e"><span class="section-number-3">4.4.</span> No SAPGUI access</h3>
+<div class="outline-text-3" id="text-4-4">
 <p>
 Not all clients have access to SAPGUI, at least not all their subsidiaries.
 Yet they somehow need to have access to a small set of SAP data and not just
@@ -349,9 +404,9 @@ needed is a web browser.
 </div>
 </div>
 
-<div id="outline-container-org86f31f0" class="outline-3">
-<h3 id="org86f31f0"><span class="section-number-3">2.5.</span> Technology makes Fiori easier</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-orgc5d3331" class="outline-3">
+<h3 id="orgc5d3331"><span class="section-number-3">4.5.</span> Technology makes Fiori easier</h3>
+<div class="outline-text-3" id="text-4-5">
 <p>
 In certain cases the unbelievable might be true. Fiori might be cheaper than
 using an ABAP report.
@@ -368,9 +423,9 @@ take more time.
 </div>
 </div>
 
-<div id="outline-container-orge54fef9" class="outline-3">
-<h3 id="orge54fef9"><span class="section-number-3">2.6.</span> Alignment to other apps</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-org8979c1d" class="outline-3">
+<h3 id="org8979c1d"><span class="section-number-3">4.6.</span> Alignment to other apps</h3>
+<div class="outline-text-3" id="text-4-6">
 <p>
 It is possible that a business unit uses Fiori apps. In that case offering
 them non-Fiori apps will be a step back. A step back in functionality, a step
@@ -379,9 +434,9 @@ back in coherence, and overall a step back in user satisfaction.
 </div>
 </div>
 
-<div id="outline-container-org4994d97" class="outline-3">
-<h3 id="org4994d97"><span class="section-number-3">2.7.</span> UI feature not available in SAPGUI</h3>
-<div class="outline-text-3" id="text-2-7">
+<div id="outline-container-org8aa5540" class="outline-3">
+<h3 id="org8aa5540"><span class="section-number-3">4.7.</span> UI feature not available in SAPGUI</h3>
+<div class="outline-text-3" id="text-4-7">
 <p>
 In case one has never taken a look at what is possible in SAP Fiori, it is
 definitely worth giving it a try. It may reveal areas that one has never
@@ -417,9 +472,9 @@ The SAPUI5 toolkit will have you covered.
 </div>
 </div>
 
-<div id="outline-container-org6f54018" class="outline-3">
-<h3 id="org6f54018"><span class="section-number-3">2.8.</span> Non-SAP backend</h3>
-<div class="outline-text-3" id="text-2-8">
+<div id="outline-container-orgc614bae" class="outline-3">
+<h3 id="orgc614bae"><span class="section-number-3">4.8.</span> Non-SAP backend</h3>
+<div class="outline-text-3" id="text-4-8">
 <p>
 Fiori's SAPUI5 toolkit is not SAP-only. If your data source can speak OData
 you may leverage Fiori. Or go even one step further: you are not a SAP
@@ -436,9 +491,9 @@ the limits as to what you may achieve with Fiori.
 </div>
 </div>
 
-<div id="outline-container-orgf2bda87" class="outline-2">
-<h2 id="orgf2bda87"><span class="section-number-2">3.</span> Checklist for decision</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgd252724" class="outline-2">
+<h2 id="orgd252724"><span class="section-number-2">5.</span> Checklist for decision</h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>Is mobile access needed?</li>
 <li>Can Fiori make the end users' routine task faster?</li>
@@ -459,9 +514,9 @@ If the answer is yes, then Fiori is a logical choice.
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="/tag/fiori.html">fiori</a>
-      <a href="/tag/fiori_vs_abap.html">fiori_vs_abap</a>
-      <a href="/tag/manager_perspective.html">manager_perspective</a>
+      <a href="/tag/embedded_analytics.html">embedded_analytics</a>
+      <a href="/tag/sap_bw.html">sap_bw</a>
+      <a href="/tag/sap_datasphere.html">sap_datasphere</a>
     </p>
   </div>
 
@@ -484,7 +539,7 @@ Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a 
   "@type" : "Blog",
   "name": " szebenyib ",
   "url" : "",
-  "image": "pages/static/images/profile.jpg",
+  "image": "static/images/profile.jpg",
   "description": ""
 }
 </script>
