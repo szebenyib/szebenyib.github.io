@@ -43,8 +43,6 @@
 <meta name="description" content="A Fiori nem fogja megoldani az összes problémát. És igen, jó eséllyel többe fog kerülni mint egy ABAP riport. De mégis sok esetben megéri. Hogy mikor? Összeszedtem egy pár esetet, amikor megéri Fiorit választani." />
 <meta name="keywords" content="fiori, fiori_vs_abap, manager_perspective">
 
-<link rel="alternate" href="/drafts/when_to_choose_fiori-hu.html" hreflang="hu" />
-<link rel="alternate" href="/drafts/when_to_choose_fiori.html" hreflang="en" />
 
   <meta property="og:site_name" content="szebenyib"/>
   <meta property="og:title" content="Mikor válasszunk Fiorit ABAP helyett?"/>
@@ -52,8 +50,8 @@
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="/drafts/when_to_choose_fiori-hu.html"/>
   <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2023-01-26 00:00:00+01:00"/>
-  <meta property="article:modified_time" content="2023-01-27 00:00:00+01:00"/>
+  <meta property="article:published_time" content="2023-05-15 00:00:00+02:00"/>
+  <meta property="article:modified_time" content="2023-06-14 00:00:00+02:00"/>
   <meta property="article:author" content="/author/balint-szebenyi.html">
   <meta property="article:section" content="Fiori"/>
   <meta property="article:tag" content="fiori"/>
@@ -131,14 +129,10 @@
 
 <article class="single">
   <header>
-          <div class="translations">
-    <a class="active" href="/drafts/when_to_choose_fiori-hu.html">hu</a>
-        <a href="/drafts/when_to_choose_fiori.html">en</a>
-    </div>
-
+      
     <h1 id="when_to_choose_fiori">Mikor válasszunk Fiorit ABAP helyett?</h1>
     <p>
-      Posted on 2023-01-26 in <a href="/category/fiori.html">Fiori</a>
+      Posted on 2023-05-15 in <a href="/category/fiori.html">Fiori</a>
 
     </p>
   </header>
@@ -149,20 +143,20 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd65a071">1. Bevezető</a></li>
-<li><a href="#org41ad933">2. Felhasználási esetek</a>
+<li><a href="#org6027fe9">1. Bevezető</a></li>
+<li><a href="#orga576cd4">2. Felhasználási esetek</a>
 <ul>
-<li><a href="#orge412f78">2.1. Elérés mobilon</a></li>
-<li><a href="#org647733e">2.2. Folyamat a középpontban</a></li>
-<li><a href="#org143dc18">2.3. Az idő pénz</a></li>
-<li><a href="#orgf011618">2.4. Ha nincs SAPGUI</a></li>
-<li><a href="#orgb2b4f4c">2.5. Amikor a Fiori fejlesztése egyszerűbb, mint egy ALV-é</a></li>
-<li><a href="#org49d42a2">2.6. Alkalmazkodás a többi alkalmazáshoz</a></li>
-<li><a href="#orgcd999a1">2.7. Amikor egy funkcionalitás nem elérhető SAPGUI-ban, de Fiorival megvalósítható</a></li>
-<li><a href="#org48c3be4">2.8. Nem-SAP integráció</a></li>
+<li><a href="#orge0626d2">2.1. Elérés mobilon</a></li>
+<li><a href="#orge045b77">2.2. Folyamat a középpontban</a></li>
+<li><a href="#org425fad3">2.3. Az idő pénz</a></li>
+<li><a href="#org34117b9">2.4. Ha nincs SAPGUI</a></li>
+<li><a href="#org64282db">2.5. Amikor a Fiori fejlesztése egyszerűbb, mint egy ALV-é</a></li>
+<li><a href="#org97b7ca4">2.6. Alkalmazkodás a többi alkalmazáshoz</a></li>
+<li><a href="#org2188141">2.7. Amikor egy funkcionalitás nem elérhető SAPGUI-ban, de Fiorival megvalósítható</a></li>
+<li><a href="#org276b0cb">2.8. Nem-SAP integráció</a></li>
 </ul>
 </li>
-<li><a href="#orgc2c569b">3. Checklist a döntéshez</a></li>
+<li><a href="#orgbeb7798">3. Checklist a döntéshez</a></li>
 </ul>
 </div>
 </div>
@@ -170,8 +164,8 @@
 The article was originally published on <a href="https://onespire.net/news/s4-comes-with-fiori/">Onespire.net</a>
 </p>
 
-<div id="outline-container-orgd65a071" class="outline-2">
-<h2 id="orgd65a071"><span class="section-number-2">1.</span> Bevezető</h2>
+<div id="outline-container-org6027fe9" class="outline-2">
+<h2 id="org6027fe9"><span class="section-number-2">1.</span> Bevezető</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Sok ügyfél kerül döntési helyzetbe: ABAP riport készüljön vagy Fiori megoldás?
@@ -184,12 +178,12 @@ megvalósítani. Ebben a cikkben ilyen eseteket gyűjtöttem össze.
 </div>
 </div>
 
-<div id="outline-container-org41ad933" class="outline-2">
-<h2 id="org41ad933"><span class="section-number-2">2.</span> Felhasználási esetek</h2>
+<div id="outline-container-orga576cd4" class="outline-2">
+<h2 id="orga576cd4"><span class="section-number-2">2.</span> Felhasználási esetek</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orge412f78" class="outline-3">
-<h3 id="orge412f78"><span class="section-number-3">2.1.</span> Elérés mobilon</h3>
+<div id="outline-container-orge0626d2" class="outline-3">
+<h3 id="orge0626d2"><span class="section-number-3">2.1.</span> Elérés mobilon</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Sok IT szervezet biztosítja már a vállalati folyamatok elérését telefonon.
@@ -244,8 +238,8 @@ megoldásért.
 </div>
 </div>
 
-<div id="outline-container-org647733e" class="outline-3">
-<h3 id="org647733e"><span class="section-number-3">2.2.</span> Folyamat a középpontban</h3>
+<div id="outline-container-orge045b77" class="outline-3">
+<h3 id="orge045b77"><span class="section-number-3">2.2.</span> Folyamat a középpontban</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Mindannyian dolgoztunk már úgy tranzakciókkal, hogy a bennük rejlő
@@ -277,8 +271,8 @@ hatékonyságnövelés könnyen lefordítható anyagi előnyre.
 </div>
 </div>
 
-<div id="outline-container-org143dc18" class="outline-3">
-<h3 id="org143dc18"><span class="section-number-3">2.3.</span> Az idő pénz</h3>
+<div id="outline-container-org425fad3" class="outline-3">
+<h3 id="org425fad3"><span class="section-number-3">2.3.</span> Az idő pénz</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Ez a szempont kéz a kézben jár a mobil eléréssel, de több annál.
@@ -311,11 +305,20 @@ keresni a tételek között. És nem kellene mindent kétszer rögzíteni.
 Ez ismét egy olyan eset, ahol a Fiori fejlesztés költségeit bőven
 ellensúlyozzák az elért -materializálható- előnyök.
 </p>
+
+<p>
+Egy vezető autógyártó vállalat ezt az utat választotta és egy személyre szabott, egyedi megoldást használnak a hét minden napján éjjel-nappal:
+</p>
+
+<p>
+<img src="./pages/static/images/why_fiori/sap_fiori_online_gr.png" alt="sap_fiori_online_gr.png" />
+<img src="./pages/static/images/why_fiori/sap_fiori_online_gr_hu.png" alt="sap_fiori_online_gr_hu.png" />
+</p>
 </div>
 </div>
 
-<div id="outline-container-orgf011618" class="outline-3">
-<h3 id="orgf011618"><span class="section-number-3">2.4.</span> Ha nincs SAPGUI</h3>
+<div id="outline-container-org34117b9" class="outline-3">
+<h3 id="org34117b9"><span class="section-number-3">2.4.</span> Ha nincs SAPGUI</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Nincs minden ügyfélnél SAPGUI, vagy legalábbis a leányvállalatokra ez már
@@ -360,11 +363,17 @@ A nincs SAPGUI kitétel esetén a Fiori előnye magától értetődő. Nem kell
 teríteni, patchelni és managelni a SAPGUI-t, mert csak egy böngészőre van
 szükség.
 </p>
+
+<p>
+Egy élelmiszeripari ügyfelünk ilyen utat járt be és a következő lett az eredmény:
+<img src="./pages/static/images/why_fiori/sap_fiori_maintain_material_overview.png" alt="sap_fiori_maintain_material_overview.png" />
+<img src="./pages/static/images/why_fiori/sap_fiori_maintain_material_detail.png" alt="sap_fiori_maintain_material_detail.png" />
+</p>
 </div>
 </div>
 
-<div id="outline-container-orgb2b4f4c" class="outline-3">
-<h3 id="orgb2b4f4c"><span class="section-number-3">2.5.</span> Amikor a Fiori fejlesztése egyszerűbb, mint egy ALV-é</h3>
+<div id="outline-container-org64282db" class="outline-3">
+<h3 id="org64282db"><span class="section-number-3">2.5.</span> Amikor a Fiori fejlesztése egyszerűbb, mint egy ALV-é</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Van olyan eset, amikor a hihetetlen megtörténik - a Fioris megoldás olcsóbb,
@@ -382,8 +391,8 @@ ALV-n egy Fiori Elements alkalmazással szemben nagyobb ráfordítással jár.
 </div>
 </div>
 
-<div id="outline-container-org49d42a2" class="outline-3">
-<h3 id="org49d42a2"><span class="section-number-3">2.6.</span> Alkalmazkodás a többi alkalmazáshoz</h3>
+<div id="outline-container-org97b7ca4" class="outline-3">
+<h3 id="org97b7ca4"><span class="section-number-3">2.6.</span> Alkalmazkodás a többi alkalmazáshoz</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 Ha egy üzleti egység már Fiori alkalmazásokat használ, akkor számukra egy nem-Fiori megoldás visszalépés. Visszalépés funkcionalitásban, koherenciában és mindent egybevéve felhasználói elégedettség tekintetében.
@@ -391,12 +400,22 @@ Ha egy üzleti egység már Fiori alkalmazásokat használ, akkor számukra egy 
 </div>
 </div>
 
-<div id="outline-container-orgcd999a1" class="outline-3">
-<h3 id="orgcd999a1"><span class="section-number-3">2.7.</span> Amikor egy funkcionalitás nem elérhető SAPGUI-ban, de Fiorival megvalósítható</h3>
+<div id="outline-container-org2188141" class="outline-3">
+<h3 id="org2188141"><span class="section-number-3">2.7.</span> Amikor egy funkcionalitás nem elérhető SAPGUI-ban, de Fiorival megvalósítható</h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 Ha valaki még sosem nézte meg mit lehet megvalósítani SAP Fioriban, akkor mindenképp érdemes ezt pótolni. Olyan lehetőségeket fedezhetünk így fel, amelyekről sosem gondoltuk volna, hogy lehetséges és hasznos lenne.
 </p>
+
+<p>
+Egy ügyfelünk úgy döntött, hogy a gyártásban kulcsfontosságú SAP rendszerét Fiori segítségével monitorozza 24/7-ben, történjen ez egy TV kivetítőjén, vagy az ügyeletes zsebében lévő telefonon:
+</p>
+
+
+<div id="org2f0143d" class="figure">
+<p><img src="./pages/static/images/why_fiori/sap_fiori_system_monitoring.png" alt="sap_fiori_system_monitoring.png" />
+</p>
+</div>
 
 <p>
 A következő forrásokra érdemes szánni egy pár órát:
@@ -427,8 +446,8 @@ A SAPUI5 eszközkészlet mindenben támogat.
 </div>
 </div>
 
-<div id="outline-container-org48c3be4" class="outline-3">
-<h3 id="org48c3be4"><span class="section-number-3">2.8.</span> Nem-SAP integráció</h3>
+<div id="outline-container-org276b0cb" class="outline-3">
+<h3 id="org276b0cb"><span class="section-number-3">2.8.</span> Nem-SAP integráció</h3>
 <div class="outline-text-3" id="text-2-8">
 <p>
 A Fiori mögött lévő SAPUI5 eszközkészlet nem csak SAP rendszerekhez használható. Ha a rendelkezésre álló adatforrás OData kompatibilis, akkor máris lehet rá Fiori frontendet ültetni. Vagy menjünk még tovább: nem SAP ügyfél és nincsen hozzáférése a SAPUI5 eszközkészlethez. Ekkor is használhatja ennek az ingyenes, openUI5 változatát, ingyen (a Fiori Elements kivételével).
@@ -441,8 +460,8 @@ A Fiori mögött lévő SAPUI5 eszközkészlet nem csak SAP rendszerekhez haszn�
 </div>
 </div>
 
-<div id="outline-container-orgc2c569b" class="outline-2">
-<h2 id="orgc2c569b"><span class="section-number-2">3.</span> Checklist a döntéshez</h2>
+<div id="outline-container-orgbeb7798" class="outline-2">
+<h2 id="orgbeb7798"><span class="section-number-2">3.</span> Checklist a döntéshez</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>Szükséges telefonos/tabletes elérést?</li>
