@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="szebenyib Atom">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YH3M9YZNTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YH3M9YZNTT');
+</script>
+
+ 
+
+<meta name="author" content="Balint Szebenyi" />
+<meta name="description" content="No year passes without learning something new, this year is not an exception either." />
+<meta name="keywords" content="abap, fiori">
+
+<link rel="alternate" href="/2023_recap.html" hreflang="en" />
+<link rel="alternate" href="/2023_recap-hu.html" hreflang="hu" />
+
+  <meta property="og:site_name" content="szebenyib"/>
+  <meta property="og:title" content="2023 Recap"/>
+  <meta property="og:description" content="No year passes without learning something new, this year is not an exception either."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/2023_recap.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-01-07 00:00:00+01:00"/>
+  <meta property="article:modified_time" content="2024-01-12 00:00:00+01:00"/>
+  <meta property="article:author" content="/author/balint-szebenyi.html">
+  <meta property="article:section" content="General"/>
+  <meta property="article:tag" content="abap"/>
+  <meta property="article:tag" content="fiori"/>
+  <meta property="og:image" content="pages/static/images/profile.jpg">
+
+  <title>szebenyib &ndash; 2023 Recap</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="pages/static/images/profile.jpg" alt="Balint's blog" title="Balint's blog">
+    </a>
+
+    <h1>
+      <a href="/">Balint's blog</a>
+    </h1>
+
+    <p>Embedded Analytics, Fiori, ABAP</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/category/embedded-analytics.html" >Embedded Analytics</a>
+          </li>
+          <li>
+            <a target="_self" href="/category/fiori.html" >Fiori</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-rss"
+           href="feeds/all.atom.xml"
+           target="_blank">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/balint-szebenyi/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/szebenyib"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+          <div class="translations">
+    <a class="active" href="/2023_recap.html">en</a>
+        <a href="/2023_recap-hu.html">hu</a>
+    </div>
+
+    <h1 id="2023_recap">2023 Recap</h1>
+    <p>
+      Posted on 2024-01-07 in <a href="/category/general.html">General</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4acd4b2">1. Introduction</a></li>
+<li><a href="#orgd3ca797">2. Projects</a>
+<ul>
+<li><a href="#orgd0d5689">2.1. PPDS/OPTI</a></li>
+<li><a href="#orge551ecb">2.2. Workflow migration from ECC to S/4</a></li>
+<li><a href="#orgeee747e">2.3. HR Fiori apps</a></li>
+<li><a href="#org88b14c0">2.4. My first RAP application</a></li>
+</ul>
+</li>
+<li><a href="#org5974c16">3. Publications and presentations</a></li>
+<li><a href="#org19b6aba">4. Courses and certifications</a>
+<ul>
+<li><a href="#org766123a">4.1. openSAP (all courses finished with record of achievement)</a>
+<ul>
+<li><a href="#org17af155">4.1.1. Understanding and Implementing the SAP Mobile Experience (mobile4)</a></li>
+<li><a href="#org0241254">4.1.2. Using the Optimizer for SQLScript Programming in SAP HANA (hanasql2)</a></li>
+<li><a href="#orgea9735a">4.1.3. Modernize Integration with SAP Integration Suite (btp3)</a></li>
+<li><a href="#org976e6a9">4.1.4. Build Intelligent Data Apps with SAP HANA Cloud Multi-Model (hana10)</a></li>
+</ul>
+</li>
+<li><a href="#org7e9f73a">4.2. SAP organized courses</a>
+<ul>
+<li><a href="#org5387157">4.2.1. SAP Fiori E2E Workshop</a></li>
+<li><a href="#orgf1787e6">4.2.2. ABAP Cloud Partner Certification Academy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4acd4b2" class="outline-2">
+<h2 id="org4acd4b2"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+2023 was a productive year for me. I had spent more time producing solutions
+with my current knowledge than I had obtaining more know-how. Nevertheless
+I could still find some time to explore new areas of SAP.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd3ca797" class="outline-2">
+<h2 id="orgd3ca797"><span class="section-number-2">2.</span> Projects</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgd0d5689" class="outline-3">
+<h3 id="orgd0d5689"><span class="section-number-3">2.1.</span> PPDS/OPTI</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+By far the biggest project was creating a PPDS optimizer heuristic for optimizing
+production and keeping together resources that are bound to the same sales
+order. This may not sound that difficult but I can assure anyone that
+the complexity of the problem on hand is in extreme heights. There are
+many-many smaller and bigger rules to find the right intersection of data
+and processing an entangled set of graphs poses its own challenges. It took
+more than half of 2023 full time to bring this solution alive and took time
+from the other half as well with ad-hoc refinements of the logic.
+</p>
+
+<p>
+What this project has taught me is that it is worth using ABAPGit for
+tracking source code changes. I have been using git ever since I have
+started my SAP career, but not when doing ABAP. However, administering
+at around 60 ABAP classes along with their interfaces (long live OO) can
+benefit from using git instead of relying solely on the transportation system.
+Experimenting in git branches, reverting commits by a few commands is a lot
+easier than manually keeping order.
+</p>
+
+<p>
+The other aspect of this project is that OO design patterns (hello GOF) are
+a must if you want to keep such a monster performant yet flexible. And not
+just that but ABAP Unit as well. Because no consultant and no client
+will be able to test the rules buried in such a multi-layered solution
+it is really nice to come prepared for those details and testing them
+before any real data touches them - or better yet before the productive
+code is written. Using test driven development (TDD) one will think
+about testability before the productive code is written and that
+makes for better planned classes and applications.
+</p>
+
+<p>
+So, using TDD, ABAPGit and design patterns were a good decision
+retrospectively as well.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge551ecb" class="outline-3">
+<h3 id="orge551ecb"><span class="section-number-3">2.2.</span> Workflow migration from ECC to S/4</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+The migration consisted of utilizing My Inbox instead of the old dedicated
+app that is no longer available on S/4. I am not a workflow developer, I know
+just enough as a Fiori/ABAP dev to migrate the existing workflow to My
+Inbox.
+</p>
+
+<p>
+This was an ugly task, since the complexity of the workflow and the utilized
+'unique' solutions in it made this a challenge. Although most of the
+transition is done there is still an open issue due to commit control
+changing in S/4 making a previous user exit unusable leading to dumps.
+</p>
+
+<p>
+The takeaway: no one can judge the depth of a mess a workflow may
+hide in itself. As a result, no manday commitment can be made in such cases.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeee747e" class="outline-3">
+<h3 id="orgeee747e"><span class="section-number-3">2.3.</span> HR Fiori apps</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Developed 4 Fiori apps, of which 3 were Fiori Elements and 1 freestyle. As
+a Fiori dev this was an easy task.
+</p>
+
+<p>
+It was justified again that using Fiori Elements is a reasonable choice where
+feasible. However, tasks that seem simple and straight forward in freestyle 
+may take a lot of time in Fiori Elements. Like creating a filter
+that accepts a date range but is filled with the current month as default,
+hiding all other options.
+</p>
+
+<p>
+And creating wireframes and mockups was justified again.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org88b14c0" class="outline-3">
+<h3 id="org88b14c0"><span class="section-number-3">2.4.</span> My first RAP application</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+I have been eyeing an opportunity to create an application using
+the SAP Restful ABAP Programming Model and 2023 gave a chance for that.
+</p>
+
+<p>
+The app itself was simple but it was a good requirement for a first
+application where everything had to work. I did not like that OData V4
+only worked if the draft capability was enabled. Since the app was
+simple draft handling would have made it more complex that it would
+have helped and as such I have resorted to a V2 service binding.
+</p>
+
+<p>
+I found the technology usable (managed scenario was available, since it
+was developed on a 2022 S/4) and I would be glad to work with it again
+as the separation of concerns guides developers and tries to free them
+from the function module-perform-thousand-line programs hell. I believe
+that when the extension part of the technology will be in order we will see
+more and more standard apps as well.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5974c16" class="outline-2">
+<h2 id="org5974c16"><span class="section-number-2">3.</span> Publications and presentations</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+I have published two articles:
+</p>
+<ul class="org-ul">
+<li>a comparison between <a href="../embedded_analytics_vs_sap_bw_vs_sap_datasphere.html">EA BW and Datasphere</a></li>
+<li>a managerial summary on <a href="../when_to_choose_fiori.html">when to choose Fiori</a></li>
+</ul>
+
+<p>
+Both of those have evolved into presentations that I have held at
+conferences with SAP Hungary.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org19b6aba" class="outline-2">
+<h2 id="org19b6aba"><span class="section-number-2">4.</span> Courses and certifications</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org766123a" class="outline-3">
+<h3 id="org766123a"><span class="section-number-3">4.1.</span> openSAP (all courses finished with record of achievement)</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org17af155" class="outline-4">
+<h4 id="org17af155"><span class="section-number-4">4.1.1.</span> Understanding and Implementing the SAP Mobile Experience (mobile4)</h4>
+</div>
+
+<div id="outline-container-org0241254" class="outline-4">
+<h4 id="org0241254"><span class="section-number-4">4.1.2.</span> Using the Optimizer for SQLScript Programming in SAP HANA (hanasql2)</h4>
+</div>
+
+<div id="outline-container-orgea9735a" class="outline-4">
+<h4 id="orgea9735a"><span class="section-number-4">4.1.3.</span> Modernize Integration with SAP Integration Suite (btp3)</h4>
+</div>
+
+<div id="outline-container-org976e6a9" class="outline-4">
+<h4 id="org976e6a9"><span class="section-number-4">4.1.4.</span> Build Intelligent Data Apps with SAP HANA Cloud Multi-Model (hana10)</h4>
+</div>
+</div>
+
+<div id="outline-container-org7e9f73a" class="outline-3">
+<h3 id="org7e9f73a"><span class="section-number-3">4.2.</span> SAP organized courses</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org5387157" class="outline-4">
+<h4 id="org5387157"><span class="section-number-4">4.2.1.</span> SAP Fiori E2E Workshop</h4>
+</div>
+
+<div id="outline-container-orgf1787e6" class="outline-4">
+<h4 id="orgf1787e6"><span class="section-number-4">4.2.2.</span> ABAP Cloud Partner Certification Academy</h4>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/abap.html">abap</a>
+      <a href="/tag/fiori.html">fiori</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " szebenyib ",
+  "url" : "",
+  "image": "pages/static/images/profile.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>

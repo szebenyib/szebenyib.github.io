@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/theme/pygments/github.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="szebenyib Atom">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YH3M9YZNTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YH3M9YZNTT');
+</script>
+
+ 
+
+<meta name="author" content="Balint Szebenyi" />
+<meta name="description" content="Nincs olyan év, hogy ne tanulnék valami olyat. 2023 sem volt kivétel ez alól." />
+<meta name="keywords" content="abap, fiori">
+
+<link rel="alternate" href="/2023_recap-hu.html" hreflang="hu" />
+<link rel="alternate" href="/2023_recap.html" hreflang="en" />
+
+  <meta property="og:site_name" content="szebenyib"/>
+  <meta property="og:title" content="2023 Visszatekintő"/>
+  <meta property="og:description" content="Nincs olyan év, hogy ne tanulnék valami olyat. 2023 sem volt kivétel ez alól."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/2023_recap-hu.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2024-01-07 00:00:00+01:00"/>
+  <meta property="article:modified_time" content="2024-01-12 00:00:00+01:00"/>
+  <meta property="article:author" content="/author/balint-szebenyi.html">
+  <meta property="article:section" content="General"/>
+  <meta property="article:tag" content="abap"/>
+  <meta property="article:tag" content="fiori"/>
+  <meta property="og:image" content="pages/static/images/profile.jpg">
+
+  <title>szebenyib &ndash; 2023 Visszatekintő</title>
+
+
+</head>
+<body class="light-theme">
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="pages/static/images/profile.jpg" alt="Balint's blog" title="Balint's blog">
+    </a>
+
+    <h1>
+      <a href="/">Balint's blog</a>
+    </h1>
+
+    <p>Embedded Analytics, Fiori, ABAP</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+            <li>
+              <a target="_self"
+                 href="/pages/about.html#about">
+                About
+              </a>
+            </li>
+
+          <li>
+            <a target="_self" href="/category/embedded-analytics.html" >Embedded Analytics</a>
+          </li>
+          <li>
+            <a target="_self" href="/category/fiori.html" >Fiori</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-rss"
+           href="feeds/all.atom.xml"
+           target="_blank">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/balint-szebenyi/"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/szebenyib"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+          <div class="translations">
+    <a class="active" href="/2023_recap-hu.html">hu</a>
+        <a href="/2023_recap.html">en</a>
+    </div>
+
+    <h1 id="2023_recap">2023 Visszatekintő</h1>
+    <p>
+      Posted on 2024-01-07 in <a href="/category/general.html">General</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org79859d4">1. Bevezető</a></li>
+<li><a href="#org67f0be4">2. Projektek</a>
+<ul>
+<li><a href="#orgccc1dcb">2.1. PPDS/OPTI</a></li>
+<li><a href="#org7bae595">2.2. Workflow migráció ECC-ről S/4-re</a></li>
+<li><a href="#org640150b">2.3. HR Fiori alkalmazások</a></li>
+<li><a href="#orgc61362c">2.4. Az első RAP alkalmazásom</a></li>
+</ul>
+</li>
+<li><a href="#orgd19c41e">3. Publikációk és előadások</a></li>
+<li><a href="#orga92b92b">4. Kurzusok és certifikációk</a>
+<ul>
+<li><a href="#org7cf3831">4.1. openSAP (valamennyi esetben Record of Achievement-tel)</a>
+<ul>
+<li><a href="#orgfe2b34b">4.1.1. Understanding and Implementing the SAP Mobile Experience (mobile4)</a></li>
+<li><a href="#org2beac29">4.1.2. Using the Optimizer for SQLScript Programming in SAP HANA (hanasql2)</a></li>
+<li><a href="#orgbbdff69">4.1.3. Modernize Integration with SAP Integration Suite (btp3)</a></li>
+<li><a href="#org8f12d11">4.1.4. Build Intelligent Data Apps with SAP HANA Cloud Multi-Model (hana10)</a></li>
+</ul>
+</li>
+<li><a href="#orgc43e73c">4.2. SAP által rendezett kurzusok</a>
+<ul>
+<li><a href="#orgaf8544e">4.2.1. SAP Fiori E2E Workshop</a></li>
+<li><a href="#org45a8d2c">4.2.2. ABAP Cloud Partner Certification Academy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org79859d4" class="outline-2">
+<h2 id="org79859d4"><span class="section-number-2">1.</span> Bevezető</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+2023 a munkáról szólt. Több időt töltöttem az ügyfelek számára megoldások
+készítésével a jelenlegi tudásommal, mint amennyi időt tanulásra fordítottam.
+Mindazonáltal ezen keresztül is tanultam, és maradt még valamennyi idő a 
+SAP új területeinek megismerésére is.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org67f0be4" class="outline-2">
+<h2 id="org67f0be4"><span class="section-number-2">2.</span> Projektek</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgccc1dcb" class="outline-3">
+<h3 id="orgccc1dcb"><span class="section-number-3">2.1.</span> PPDS/OPTI</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+A projektek közül párját ritkítóan nagy volt a PPDS optimizer heurisztika
+létrehozása, melynek célja az volt, hogy összetartsa a vevői rendelések
+teljesítéséhez szükséges erőforrásokat. Ez nem hangzik túl bonyolultan,
+de nyugodtan biztosíthatók felőle mindenkit, hogy a probléma kiemelten
+komplex. Rengeteg kisebb-nagyobb szabályt kell figyelembe venni, az
+adatok megfelelő metszetén dolgozni, majd az eredményeket különböző gráfokon
+érvényesíteni. Ez 2023-nak több, mint a felét kitette full time és a másik
+felében is szükség volt időráfordításra a szabályok finomítása miatt.
+</p>
+
+<p>
+Amit ez a projekt tanított nekem, az az hogy megéri ABAPGit-et használni
+verziókövetésre. Git-et azóta használok, mióta elkezdtem SAP-val foglalkozni,
+de ABAP-ra eddig nem használtam. Azonban vagy 60 ABAP osztály és a
+kapcsolódó interfészeik kezelésében (éljen az OO) igencsak segítséget
+jelent a git használata. Kísérletezés különböző branchekben, vagy
+commitok visszavonása egy pár paranccsal sokkalta egyszerűbb és gyorsabb,
+mint manuálisan megtenni mindezeket.
+</p>
+
+<p>
+A másik aspektus, amit megvilágított ez a projekt, hogy az OO tervezési
+minták (hello GOF) roppant hasznosak, ha egy ekkora monstrumot
+szeretnénk működtetni és nyitva tartani a bővítések és módosítások felé. És
+nem is csak a minták, hanem az ABAP Unit is hozzátette a magáét. Nincs olyan
+tanácsadó vagy ügyfél, aki le tudja tesztelni a sok apró szabályt,
+ami egy ilyen szoftver belsejében leledzik. Emiatt nagyon hasznos, ha
+vannak a tarsolyunkban unit tesztek, amelyek már azelőtt letesztelik a
+szabályokat, mielőtt azok valódi adatokkal találkoznának - vagy még jobb,
+ha már a teszt is a produktív kód előtt megszületik. Ha test driven 
+developmentet alkalmazunk, akkor azáltal, hogy a produktív kód előtt már
+azon gondolkodunk hogy az hogyan lesz tesztelhető, jobb minőségű kódot
+fogunk írni.
+</p>
+
+<p>
+Tehát, TDD-vel fejleszteni, ABAPGit-tel és tervezési mintákkal támogatva
+visszatekintve is jó döntés volt.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7bae595" class="outline-3">
+<h3 id="org7bae595"><span class="section-number-3">2.2.</span> Workflow migráció ECC-ről S/4-re</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+A migráció lényege a My Inboxba terelés volt, a régi dedikált alkalmazás
+helyett, amely már nem érhető el S/4-en. Nem ismerem mélyrehatóan a
+workflowkat, épp hogy annyit tudok, amely Fiori/ABAP fejlesztőként elegendő
+a migrációhoz My Inboxba.
+</p>
+
+<p>
+Ez egy nem túl szép feladat, mivel a workflow komplexitása és az abban
+használt "egyedi" megoldások ezt kihívássá tették. Bár majdnem az
+egész migráció megvan, még mindig van nyitott pont, a commit kezelés
+megváltozása miatt S/4-ben, amely egy korábbi user exit-et 
+használhatatlanná tett dumpok formájában.
+</p>
+
+<p>
+A tanulság: senki sem tudja megítélni mekkora adósságot (technical debt) és
+problémákat rejt magában egy workflow. Ennek okán nem tehető fix
+napszám vállalás ilyen migrációkra.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org640150b" class="outline-3">
+<h3 id="org640150b"><span class="section-number-3">2.3.</span> HR Fiori alkalmazások</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+4 Fiori alkalmazást fejlesztettem, amelyből 3 Fiori Elements és 1 freestyle
+volt. Fiori fejlesztőként ez profilba vágott és egyszerű feladat volt.
+</p>
+
+<p>
+Újfent bebizonyosodott, hogy Fiori Elementset használni mindig megéri és
+ésszerű, ahol az lefedi a követelményeket. Azonban az is megerősítést nyert,
+hogy olyan feladatok, amelyek egyszerűek és triviálisak lennének egy freestyle
+fejlesztés során sok napot elvihetnek Fiori Elements fejlesztés esetén. Például
+egy dátum intervallumot tartalmazó szűrőmező, amely az aktuális hónapot
+tartalmazza, de tetszőleges tól-ig értéket vehet fel, de más speciális
+értéket nem, az pont egy ilyen iskolapélda.
+</p>
+
+<p>
+És természetesen a vázlatok és képernyőtervekbe fektetett idő is ismét
+igazolta a ráfordítást.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc61362c" class="outline-3">
+<h3 id="orgc61362c"><span class="section-number-3">2.4.</span> Az első RAP alkalmazásom</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Már vártam, hogy mikor lesz lehetőségem SAP Restful ABAP Programming Model-lel
+alkalmazást fejleszteni és a 2023-as év megadta rá a lehetőséget.
+</p>
+
+<p>
+Maga az alkalmazás egyszerű és mint ilyen, jó kandidátus volt egy első
+alkalmazáshoz, ahol minden kis részletnek működnie kell. Az nem nyerte
+el a tetszésemet, hogy OData V4-es protokollal csak akkor működik
+a technológia, ha vázlatokat is támogat (draft handling) a megoldás. Mivel
+az alkalmazás egyszerű, így ez felesleges bonyolítás lett volna, emiatt
+V2-es service bindingra volt szükség.
+</p>
+
+<p>
+A technológiát jól használhatónak találtam (volt managed scenario,
+mivel 2022-es S/4-et használ az ügyfél) és szívesen dolgozok majd
+vele legközelebb is, mivel a fejlesztőket vezető irányvonalak
+hasznosak abban, hogy távolodjunk a funkciós elem-form-ezer soros programok
+kavalkádjából. Úgy vélem, hogy amint a bővítések támogatása is megérkezik
+a RAP-ba, egyre több sztenderd alkalmazást fogunk látni, ami használja
+ezt a technológiát.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd19c41e" class="outline-2">
+<h2 id="orgd19c41e"><span class="section-number-2">3.</span> Publikációk és előadások</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Két cikket publikáltam:
+</p>
+<ul class="org-ul">
+<li>egy összehasonlítás <a href="../embedded_analytics_vs_sap_bw_vs_sap_datasphere.html">EA BW és Datasphere között</a></li>
+<li>egy vezetői összefoglalót arról, hogy <a href="../when_to_choose_fiori-hu.html">mikor használjunk Fiorit</a></li>
+</ul>
+
+<p>
+Ezek közül mindkettő olyan jól sikerült, hogy előadások formájában
+is elmondhattam ügyfeleinknek SAP Hungary konferenciákon.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga92b92b" class="outline-2">
+<h2 id="orga92b92b"><span class="section-number-2">4.</span> Kurzusok és certifikációk</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org7cf3831" class="outline-3">
+<h3 id="org7cf3831"><span class="section-number-3">4.1.</span> openSAP (valamennyi esetben Record of Achievement-tel)</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgfe2b34b" class="outline-4">
+<h4 id="orgfe2b34b"><span class="section-number-4">4.1.1.</span> Understanding and Implementing the SAP Mobile Experience (mobile4)</h4>
+</div>
+
+<div id="outline-container-org2beac29" class="outline-4">
+<h4 id="org2beac29"><span class="section-number-4">4.1.2.</span> Using the Optimizer for SQLScript Programming in SAP HANA (hanasql2)</h4>
+</div>
+
+<div id="outline-container-orgbbdff69" class="outline-4">
+<h4 id="orgbbdff69"><span class="section-number-4">4.1.3.</span> Modernize Integration with SAP Integration Suite (btp3)</h4>
+</div>
+
+<div id="outline-container-org8f12d11" class="outline-4">
+<h4 id="org8f12d11"><span class="section-number-4">4.1.4.</span> Build Intelligent Data Apps with SAP HANA Cloud Multi-Model (hana10)</h4>
+</div>
+</div>
+
+<div id="outline-container-orgc43e73c" class="outline-3">
+<h3 id="orgc43e73c"><span class="section-number-3">4.2.</span> SAP által rendezett kurzusok</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgaf8544e" class="outline-4">
+<h4 id="orgaf8544e"><span class="section-number-4">4.2.1.</span> SAP Fiori E2E Workshop</h4>
+</div>
+
+<div id="outline-container-org45a8d2c" class="outline-4">
+<h4 id="org45a8d2c"><span class="section-number-4">4.2.2.</span> ABAP Cloud Partner Certification Academy</h4>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/abap.html">abap</a>
+      <a href="/tag/fiori.html">fiori</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " szebenyib ",
+  "url" : "",
+  "image": "pages/static/images/profile.jpg",
+  "description": ""
+}
+</script>
+</body>
+</html>
